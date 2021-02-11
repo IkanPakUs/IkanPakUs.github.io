@@ -68,7 +68,7 @@ body {
 }
 
 /* OVERLAY MENU */
-.overlayBut {
+.overlay-btn {
     color:#ffffff;
     margin: 21px;
 }
@@ -91,26 +91,26 @@ body {
     opacity: 1;
 }
 
-.overlayMenu ul li {
+.overlayenu ul li {
     text-align: end;
     list-style: none;
 }
 
-.overlayMenu ul li a {
+.overlay-menu ul li a {
     text-decoration: none;
     font-size: 20px;
     color: #e94560;
 }
 
-.overlayMenu ul li a:hover {
+.overlay-menu ul li a:hover {
     color: #bd2e46;
 }
 
-.overlayInfo {
+.overlay-info {
     color: #e94560;
 }
 
-.overlayInfo ul li {
+.overlay-info ul li {
     list-style: none;
 }
 
@@ -133,18 +133,18 @@ body {
 }
 
     /* .PAGELIST */
-#pageList {
+#page-list {
     position: fixed;
 }
 
-#pageList ul {
+#page-list ul {
     list-style: none;
     position: fixed;
     left: 0;
     top: 300px;
 }
 
-#pageList .list a span {
+#page-list .list a span {
     font-size: 16px;
     color: #ffffff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -162,11 +162,11 @@ body {
     }
 }
 
-#pageList .list a {
+#page-list .list a {
     text-decoration: none;
 }
 
-#pageList .list a::after {
+#page-list .list a::after {
     content: "";
     display: block;
     background-color: #ffffff;
@@ -175,7 +175,7 @@ body {
     transition: width .3s;
 }
 
-#pageList .list .active::after {
+#page-list .list .active::after {
     content: "";
     width: 50px;
     transition: width .8s;
@@ -185,12 +185,12 @@ body {
 /* MAIN PAGE */
 
     /* .CONTENT */
-.mainPage {
+.mainpage {
     display: flex;
     height: 85vh;
 }
 
-#textMainPage {
+#text-mainpage {
     color: #ffffff;
     font-size: 50px;
     position: absolute;
@@ -199,7 +199,7 @@ body {
     text-align: right;
 }
 
-#textMainPage h3 {
+#text-mainpage h3 {
     font-weight: bold;
     color: #e94560;
 }
@@ -244,7 +244,7 @@ body {
 
 
 /* .NEXT BUTTON */
-#home .nextButton {
+#home .next-icon {
     color: #ffffff;
     position: relative;
     top: -50px;
@@ -252,12 +252,12 @@ body {
 }
 
 /* ABOUT ME PAGE */
-#aboutMe {
+#about-me {
     height: 100vh;
 }
 
     /* .IMAGE */
-#aboutMe .card {
+#about-me .card {
     text-align: end;
     border-color: #000000;
     position: relative;
@@ -267,16 +267,16 @@ body {
 }
 
     /* .DESC*/
-#aboutMe .desc p {
+#about-me .desc p {
     color: #ffffff;
     font-size: 24px;
 }
 
-#aboutMe .desc span {
+#about-me .desc span {
     font-size: 20px;
 }
 
-#aboutMe .desc p::before {
+#about-me .desc p::before {
     content: '';
     position: absolute;
     top: 80px;
@@ -356,20 +356,20 @@ body {
 }
 
     /* .SKILL BAR */
-.skillBarName p {
+.skill-bar-name p {
     top: -24px;
     position: absolute;
     color: #ffffff;
 }
 
-.skillBarPercent {
+.skill-bar-percent {
     position: absolute;
     color: #ffffff;
     top: -24px;
     right: 0px;
 }
 
-.mySkillBar {
+.my-skill-bar {
     margin-top: 24px;
     position: relative;
     width: 100%;
@@ -379,53 +379,85 @@ body {
     margin-bottom: 40px;
 }
 
-.skillBar {
+.skill-bar {
     box-sizing: border-box;
     height: 3px;
     background: #e94560;
 }
 
-/* CONTACT ME PAGE */
-#contact {
+/* PORTOFOLIO PAGE */
+#portofolio {
     height: 100vh;
 }
 
     /* .TITLE */
-#contactTitle h2 {
+#portofolio-title h2 {
     color: #ffffff;
 }
 
     /* .TEXT */
-#textContent h1 {
+#text-content h1 {
     position: absolute;
     left: 80px;
     top: 130px;
     color: #ffffff;
 }
 
-#textContent h1 span {
+#text-content h1 span {
     font-weight: bold;
     color: #e94560;
 }
 
-    /* .TEXT BOX */
-#textBox #formBox {
+    /* .CONTENT */
+
+#content-warp {
+    margin-top: 90px;
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.img-content {
+    margin: 10px;
+    width: 350px;
+    height: 170px;
+    position: relative;
+}
+
+.portofolio-img {
     position: absolute;
-    top: 130px;
-    width: 470px;
+    width: 100%;
+    height: 100%;
 }
 
-#textBox .form-control {
-    border-style: none;
-    border-bottom: 2px #ffffff solid;
-    background: transparent;
+.image-text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    background: #000000;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+
+.image-text:hover {
+    opacity: 0.6;
+}
+
+.image-text p {
     color: #ffffff;
+    margin-bottom: 0px;
 }
 
-#textBox .form-control:focus {
-    box-shadow: none;
-    border-color: none;
-    border-bottom: 2px #e94560 solid;
+.image-text p.date {
+    font-size: 24px;
+}
+
+.img-name {
+    font-weight: bold;
 }
 
 /* FOOTERPAGE */
@@ -433,21 +465,24 @@ body {
     height: 100vh;
 }
 
-.footerContent {
+.footer-content {
     position: relative;
     text-align: center;
 }
 
-.footerContent p {
-    color: #ffffff;
-    margin-top: 16px;
-}
-
-.footerContent h3 {
+.footer-content h3 {
     color:#ffffff;
     font-size: 34px;
     font-family: Adeliapasha;
     text-decoration: none;
+}
+
+.footer-info {
+    color: #ffffff;
+}
+
+.footer-info ul li {
+    list-style: none;
 }
 
 .copyright {
@@ -475,7 +510,7 @@ body {
 @media(max-width: 768px) { 
 
     /* MAIN PAGE */
-    #pageList ul {
+    #page-list ul {
         display: none;
     }
 
@@ -484,21 +519,21 @@ body {
         top: 250px;
     }
 
-    #textMainPage {
+    #text-main-page {
         font-size: 28px;
     }
 
-    #textMainPage h3 {
+    #text-main-page h3 {
         font-size: 18px;
     }
 
 
     /* ABOUT PAGE */
-    #aboutMe {
+    #about-me {
         text-align: center;
     }
 
-    #aboutMe .card {
+    #about-me .card {
         border-color: #000000;
         background-color: transparent;
         border: none;
@@ -510,17 +545,17 @@ body {
         margin: 0 auto
     }
 
-    #aboutMe .desc p {
+    #about-me .desc p {
         color: #ffffff;
         font-size: 18px;
         text-align: center;
     }
     
-    #aboutMe .desc span {
+    #about-me .desc span {
         font-size: 20px;
     }
     
-    #aboutMe .desc p::before {
+    #about-me .desc p::before {
         top: 60px;
         left: 43px;
     }
@@ -547,7 +582,7 @@ body {
         height: 140vh;
     }
 
-    .mySkill.ml-4.mt-5 {
+    .my-skill.ml-4.mt-5 {
         margin-top: 0px !important;
         margin-left: 0px !important;
     }
@@ -560,28 +595,28 @@ body {
         top: -50px;
     }
 
-    .skillContent.col-8 {
+    .skill-content.col-8 {
         max-width: unset;
     }
 
-    .skillContent.col-4 {
+    .skill-content.col-4 {
         max-width: unset;
         margin-top: 100px;
     }
 
-    /* CONTACT */
+    /* PORTOFOLIO */
 
-    #contactContent {
+    #portofolio-content {
         display: block;
     }
 
-    #textBox {
+    #text-box {
         position: relative;
         top: 100px;
     }
 
      /* .TEXT */
-    #textContent h1 {
+    #text-content h1 {
         position: absolute;
         left: 16px;
         top: 130px;
@@ -589,27 +624,8 @@ body {
         font-size: 24px;
     }
 
-    #textContent h1 span {
+    #text-content h1 span {
         font-weight: bold;
         color: #e94560;
-    }
-
-    #textBox #formBox {
-        position: absolute;
-        top: 130px;
-        width: 300px;
-    }
-    
-    #textBox .form-control {
-        border-style: none;
-        border-bottom: 2px #ffffff solid;
-        background: transparent;
-        color: #ffffff;
-    }
-    
-    #textBox .form-control:focus {
-        box-shadow: none;
-        border-color: none;
-        border-bottom: 2px #e94560 solid;
     }
 }

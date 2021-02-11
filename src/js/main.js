@@ -103,7 +103,7 @@ function menuScroll(){
             activeMenu('.skill');
         } else if(height <= 2523){
             hideMenu();
-            activeMenu('.contact');
+            activeMenu('.portofolio');
         } else if(height >= 2523){
             hideMenu();
             activeMenu('.footer');
@@ -121,7 +121,7 @@ function smoothSlide(){
         
     }
 
-    $(".menuPage ul li a").on('click', function(event){
+    $(".menu-page ul li a").on('click', function(event){
 
         if (this.hash !== ""){
  
@@ -144,7 +144,7 @@ function overlayMenu(){
 
     "use strict";
 
-    let menu = $(".overlayBut");
+    let menu = $(".overlay-btn");
     $(menu).on("click", function(){
 
         "use strict"
@@ -171,53 +171,17 @@ function percentBar(){
 
     "use strict"
 
-    $('.mySkillBar').each(function(){
+    $('.my-skill-bar').each(function(){
         let percent = $(this).attr('percent');
 
-        $(this).find('.skillBarPercent').text(percent);
+        $(this).find('.skill-bar-percent').text(percent);
 
-        $(this).find('.skillBar').css({
+        $(this).find('.skill-bar').css({
             "width": percent
         });
     });
 
 }
-
-
-// ------ * AJAX FORM * ------ //
-function sendMail(){
-
-    "use strict"
-
-    $('#sendMessage').submit(function(){
-        $.ajax({
-            type: 'POST',
-            url: $(this).attr('action'),
-            data: $(this).serialize(),
-            success: function(){
-                alert('sukses');
-            }
-        })
-        return false;
-    });
-
-}
-
-// ------ SWEET ALERT BUTTON ------ //
-function sweetButton(){
-
-    "use strict"
-
-    $('#sendMessage').click(function(){
-        swal({
-            title: "Your message have been send",
-            text: "please wait for reply",
-            icon: "success",
-            button: "OK"
-        });
-    });
-}
-
 
 // ------ COPYRIGHT ------ //
 let year = new Date();

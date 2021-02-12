@@ -31,7 +31,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    width: 400px;
+    max-width: 400px;
     border: 0px;
     height: 3px;
     overflow: hidden;
@@ -259,6 +259,7 @@ body {
 /* ABOUT ME PAGE */
 #about-me {
     height: 100vh;
+    position: relative;
 }
 
     /* .IMAGE */
@@ -275,25 +276,27 @@ body {
 #about-me .desc p {
     color: #ffffff;
     font-size: 24px;
+    position: relative;
 }
 
 #about-me .desc span {
     font-size: 20px;
+    position: relative;
+    display: flex;
 }
 
-#about-me .desc p::before {
+#about-me .desc span::after {
     content: '';
     position: absolute;
-    top: 80px;
-    left: 30px;
     width: 260px;
     height: 2px;
     background-color: #ffffff;
+    bottom: 0px;
 }
 
 .desc {
-    position: absolute;
-    top: 850px;
+    position: relative;
+    top: 200px;
     width: 390px;
     left: 15%;
 }
@@ -429,6 +432,10 @@ body {
     position: relative;
 }
 
+.img-content a {
+    text-decoration: none;
+}
+
 .portofolio-img {
     position: absolute;
     width: 100%;
@@ -512,27 +519,7 @@ body {
     color: #f8b0ff;
 }
 
-@media(max-width: 768px) { 
-
-    /* MAIN PAGE */
-    #page-list ul {
-        display: none;
-    }
-
-    .media {
-        font-size: 14px;
-        top: 250px;
-    }
-
-    #text-main-page {
-        font-size: 28px;
-    }
-
-    #text-main-page h3 {
-        font-size: 18px;
-    }
-
-
+@media(max-width: 990px) {
     /* ABOUT PAGE */
     #about-me {
         text-align: center;
@@ -558,29 +545,119 @@ body {
     
     #about-me .desc span {
         font-size: 20px;
-    }
-    
-    #about-me .desc p::before {
-        top: 60px;
-        left: 43px;
+        justify-content: center;
+        left: auto;
     }
     
     .desc {
         position: relative;
         width: 100%;
-        top: 0px;
+        top: 10px;
         left: 0px;
     }
     
     .desc ul {
         list-style: none;
         width: 100%;
-        text-align: left;
+        text-align: center;
     }
     
     .desc li {
         color: #ffffff;
     } 
+
+    /* PORTOFOLIO */
+
+    #portofolio-content.row {
+        display: unset;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #text-box {
+        position: relative;
+        top: 100px;
+    }
+
+     /* .TEXT */
+     #text-content {
+        max-width: unset;
+        flex: unset;
+        height: 130px !important;
+        position: relative;
+    } 
+    #text-content h1 {
+        position: relative;
+        color: #ffffff;
+        font-size: 24px;
+        left: 0px;
+        top: 30px;
+    }
+
+    #text-content h1 span {
+        font-weight: bold;
+        color: #e94560;
+    }
+
+    /* .CONTENT */
+    #content-warp {
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-warp {
+        position: relative;
+        height: auto;
+    }
+
+    .img-content {
+        max-width: unset;
+        position: relative;
+        margin: 10px auto;
+    }
+
+    .image-text {
+        top: -76px;
+        height: 170px;
+    }
+
+    .portofolio-img {
+       position: relative; 
+    } 
+}
+
+@media(max-width: 768px) {
+    
+    /* PRELOAD */
+    .pace {
+        max-width: 300px;
+    }
+
+    /* MAIN PAGE */
+    #page-list ul {
+        display: none;
+    }
+
+    .media {
+        font-size: 14px;
+        top: 250px;
+    }
+
+    #text-mainpage {
+        font-size: 28px;
+    }
+
+    #text-mainpage h3 {
+        font-size: 18px;
+    }
 
     /* SKILL */
     #skill {
@@ -592,7 +669,7 @@ body {
         margin-left: 0px !important;
     }
 
-    .row {
+    .my-skill .row {
         display: unset;
     }
 
@@ -607,30 +684,5 @@ body {
     .skill-content.col-4 {
         max-width: unset;
         margin-top: 100px;
-    }
-
-    /* PORTOFOLIO */
-
-    #portofolio-content {
-        display: block;
-    }
-
-    #text-box {
-        position: relative;
-        top: 100px;
-    }
-
-     /* .TEXT */
-    #text-content h1 {
-        position: absolute;
-        left: 16px;
-        top: 130px;
-        color: #ffffff;
-        font-size: 24px;
-    }
-
-    #text-content h1 span {
-        font-weight: bold;
-        color: #e94560;
     }
 }

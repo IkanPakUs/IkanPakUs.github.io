@@ -436,6 +436,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
+    left: 0px;
 }
 
 .image-text {
@@ -446,6 +447,7 @@ body {
     justify-content: center;
     flex-direction: column;
     position: absolute;
+    left: 0px;
     background: #000000;
     opacity: 0;
     transition: opacity 0.6s ease-in-out;
@@ -599,38 +601,27 @@ body {
         font-weight: bold;
         color: #e94560;
     }
+    
 
     /* .CONTENT */
     #content-warp {
         max-width: 100%;
         width: 100%;
         height: 100%;
-        position: relative;
         margin: 0px;
         padding: 0px;
-        display: flex;
-        flex-direction: column;
+        display: block;
     }
 
     .img-warp {
-        position: relative;
         height: auto;
     }
 
     .img-content {
         max-width: unset;
-        position: relative;
         margin: 10px auto;
+        z-index: 100;
     }
-
-    .image-text {
-        top: -76px;
-        height: 170px;
-    }
-
-    .portofolio-img {
-       position: relative; 
-    } 
 }
 
 @media(max-width: 768px) {

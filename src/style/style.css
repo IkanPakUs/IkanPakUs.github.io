@@ -622,6 +622,10 @@ body {
         margin: 10px auto;
         z-index: 100;
     }
+
+    #footer {
+        height: 110vh;
+    }
 }
 
 @media(max-width: 768px) {

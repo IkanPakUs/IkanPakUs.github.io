@@ -117,10 +117,6 @@ function smoothSlide(){
 
     "use strict";
 
-    function slide(){
-        
-    }
-
     $(".menu-page ul li a").on('click', function(event){
 
         if (this.hash !== ""){

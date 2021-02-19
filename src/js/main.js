@@ -32,9 +32,8 @@ function preLoad(){
     "use strict";
 
     Pace.on('done', function(){
-        
-    $('#preloader').delay(1000).animate({top: '-120%'}, 2000, $.bez([0.19,1,0.22,1]));
-    
+
+        $('#preloader').delay(1000).animate({top: '-120%'}, 2000, $.bez([0.19,1,0.22,1]));    
     });
 
     hideMenu();
@@ -130,7 +129,7 @@ function smoothSlide(){
             }, 800, function(){
                 window.location.hash = loc; 
             });
-        } // End if
+        }
     });
 
 }

@@ -387,6 +387,8 @@ body {
     box-sizing: border-box;
     height: 3px;
     background: #e94560;
+    width: 0px;
+    transition: 1s ease-in-out;
 }
 
 /* PORTOFOLIO PAGE */

@@ -20,7 +20,6 @@ $(document).ready(function(){
     menuScroll();
     smoothSlide();
     overlayMenu();
-    percentBar();
 });
 
             /**************
@@ -100,6 +99,7 @@ function menuScroll(){
         } else if(height <= 1862){
             hideMenu();
             activeMenu('.skill');
+            percentBar();
         } else if(height <= 2523){
             hideMenu();
             activeMenu('.portofolio');

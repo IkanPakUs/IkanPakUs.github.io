@@ -1,0 +1,185 @@
+@media (max-width: 990px) {
+	/* ABOUT PAGE */
+	#about-me {
+		text-align: center;
+	}
+
+	#about-me .desc p {
+		color: var(--secondary-color);
+		font-size: 18px;
+		text-align: center;
+	}
+
+	#about-me .desc span {
+		font-size: 20px;
+		justify-content: center;
+		left: auto;
+	}
+
+	#about-me .desc {
+		position: relative;
+		width: 100%;
+		top: 10px;
+		left: 0px;
+	}
+
+	#about-me .desc ul {
+		list-style: none;
+		width: 100%;
+		text-align: center;
+	}
+
+	#about-me .desc li {
+		color: var(--secondary-color);
+	}
+
+	/* PORTOFOLIO */
+	#portofolio-title h2 {
+		display: none;
+	}
+
+	#portofolio-content.row {
+		display: unset;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	}
+
+	#text-box {
+		position: relative;
+		top: 100px;
+	}
+
+	/* .TEXT */
+	#text-content {
+		max-width: unset;
+		flex: unset;
+		height: 130px !important;
+		position: relative;
+	}
+	#text-content h1 {
+		position: relative;
+		color: var(--secondary-color);
+		font-size: 32px;
+		left: 0px;
+		top: 30px;
+	}
+
+	#text-content h1 span {
+		font-weight: bold;
+		color: #e94560;
+	}
+
+	/* .CONTENT */
+	#content-warp {
+		max-width: 100%;
+		width: 100%;
+		height: 100%;
+		margin: 0px;
+		padding: 0px;
+		display: block;
+	}
+
+	.img-warp {
+		height: auto;
+	}
+
+	.img-content {
+		max-width: unset;
+		margin: 10px auto;
+		z-index: 100;
+	}
+
+	#footer {
+		height: 110vh;
+	}
+}
+
+@media (max-width: 768px) {
+	/* PRELOAD */
+	.pace {
+		max-width: 300px;
+	}
+
+	/* OVERLAY */
+	#overlay {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.overlay-menu {
+		flex: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 140px 0px;
+	}
+
+	.overlay-info {
+		height: 200px;
+		flex: none;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		max-width: fit-content;
+		text-align: center;
+	}
+
+	.overlay-info h5 {
+		font-size: 16px;
+	}
+
+	.overlay-info ul li {
+		font-size: 12px;
+	}
+
+	.overlay-menu ul li {
+		text-align: center;
+	}
+
+	/* MAIN PAGE */
+	#page-list ul {
+		display: none;
+	}
+
+	.media {
+		font-size: 14px;
+		top: 250px;
+	}
+
+	#text-mainpage {
+		font-size: 28px;
+	}
+
+	#text-mainpage h3 {
+		font-size: 18px;
+	}
+
+	/* SKILL */
+	#skill {
+		height: 140vh;
+	}
+
+	.my-skill.ml-4.mt-5 {
+		margin-top: 0px !important;
+		margin-left: 0px !important;
+	}
+
+	.my-skill .row {
+		display: unset;
+	}
+
+	.timeline h5 {
+		top: -50px;
+	}
+
+	.skill-content.col-8 {
+		max-width: unset;
+	}
+
+	.skill-content.col-4 {
+		max-width: unset;
+		margin-top: 100px;
+	}
+}

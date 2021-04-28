@@ -1,0 +1,103 @@
+/* ONLY FOR ANIMATED PAGE */
+.menu.animate #text-mainpage .text-box {
+	transform: translateY(50px);
+	opacity: 0;
+}
+
+.menu.animate #about .desc {
+	transform: translateY(50px);
+	opacity: 0;
+}
+
+.menu.animate #skill .timeline::before {
+	height: 0%;
+}
+
+.menu.animate #skill .timeline ul li::before {
+	opacity: 0;
+}
+
+.menu.animate #skill .timeline ul li .timeline-name h4 {
+	transform: translateX(-50px);
+	opacity: 0;
+}
+
+.menu.animate #skill .timeline ul li .timeline-name p {
+	transform: translateY(-20px);
+	opacity: 0;
+}
+
+.menu.animate #portofolio #content-warp .img-content .portofolio-img {
+	transform: scale(0.7);
+	opacity: 0;
+}
+
+.menu.animate #portofolio #text-content {
+	transform: translateX(-20px);
+	opacity: 0;
+}
+
+/* Overlay Menu */
+#overlay.active {
+	visibility: visible;
+	opacity: 1;
+}
+
+.overlay-menu ul li a.hide {
+	bottom: -30px;
+}
+
+.overlay-info.hide {
+	transform: translateX(200px);
+	opacity: 0;
+}
+
+/* Dark Mode */
+body.dark-mode,
+body.dark-mode #home,
+body.dark-mode #about,
+body.dark-mode #skill,
+body.dark-mode #portofolio,
+body.dark-mode #footer {
+	background-color: var(--secondary-color);
+}
+
+body.dark-mode .overlay-btn,
+body.dark-mode .next-btn,
+body.dark-mode .overlay-btn:hover::after,
+body.dark-mode .next-btn:hover::after,
+body.dark-mode #text-mainpage,
+body.dark-mode .media a,
+body.dark-mode #about .desc,
+body.dark-mode #skill .timeline h5,
+body.dark-mode #skill .timeline ul li,
+body.dark-mode #skill .skill-bar-name p,
+body.dark-mode #skill .skill-bar-percent,
+body.dark-mode #portofolio #text-content h1,
+body.dark-mode .image-text p,
+body.dark-mode .footer-content h3,
+body.dark-mode .footer-info,
+body.dark-mode .copyright,
+body.dark-mode .information a {
+	color: var(--primary-color);
+}
+
+/* Overflow */
+body.dark-mode #overlay {
+	background-color: var(--primary-color);
+}
+
+body.dark-mode .overlay-menu ul li a,
+body.dark-mode .overlay-info,
+body.dark-mode #switch-btn {
+	color: var(--secondary-color);
+}
+
+body.dark-mode .overlay-btn:hover::after,
+body.dark-mode .next-btn:hover::after {
+	background-color: var(--primary-color);
+}
+
+body.dark-mode #skill .my-skill-bar {
+	background: var(--shadow-color);
+}

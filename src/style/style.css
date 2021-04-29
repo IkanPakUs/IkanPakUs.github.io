@@ -1,5 +1,4 @@
 @import url(animate.css);
-@import url(responsive.css);
 
 /* GENERAL */
 
@@ -22,19 +21,12 @@ body {
 	overflow: auto;
 	height: 100%;
 	width: 100%;
-	overflow: hidden;
 	-ms-overflow-style: none; /* Internet Explorer 10+ */
 	scrollbar-width: none;
 }
 
 body::-webkit-scrollbar {
 	display: none; /* Safari and Chrome */
-}
-
-/* FONT */
-@font-face {
-	font-family: Adeliapasha;
-	src: url(../font/Quickers.ttf);
 }
 
 /* PRELOADER */
@@ -212,12 +204,6 @@ body::-webkit-scrollbar {
 	height: 85vh;
 }
 
-#text-mainpage .text-box {
-	transform: translateY(0px);
-	opacity: 1;
-	transition: 0.8s ease-in-out;
-}
-
 #text-mainpage {
 	color: var(--secondary-color);
 	font-size: 38px;
@@ -225,6 +211,13 @@ body::-webkit-scrollbar {
 	top: 260px;
 	text-align: center;
 	overflow: hidden;
+	padding: 0px 30px;
+}
+
+#text-mainpage .text-box {
+	transform: translateY(0px);
+	opacity: 1;
+	transition: 0.8s ease-in-out;
 }
 
 #text-mainpage h3 {
@@ -394,30 +387,28 @@ body::-webkit-scrollbar {
 
 /* PORTOFOLIO PAGE */
 #portofolio {
-	position: absolute;
-	top: 0px;
 	background-color: var(--primary-color);
 	height: 100vh;
-	width: 100%;
+	max-width: 100%;
 	transition: 0.4s ease-in-out;
+	display: flex;
+	align-items: center;
 }
 
-#portofolio #portofolio-content {
-	position: relative;
-	top: 80px;
-	padding: 0px 80px;
+#portofolio-content {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
 }
 
-/* .TEXT */
-#portofolio #text-content {
-	opacity: 1;
-	transition: 0.8s ease-in-out;
+#text-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0px 100px;
 }
 
 #portofolio #text-content h1 {
-	position: absolute;
-	left: 80px;
-	top: 160px;
 	color: var(--secondary-color);
 }
 
@@ -426,20 +417,25 @@ body::-webkit-scrollbar {
 	color: var(--contras-color);
 }
 
-/* .CONTENT */
+#img-content {
+	display: flex;
+	justify-content: center;
+}
 
 #content-warp {
 	margin-top: 90px;
-	width: 50%;
-	height: 100%;
 	position: relative;
+	left: 30px;
+	display: grid;
+	padding: 0px 70px;
+	grid-template-columns: auto auto;
 }
 
 #content-warp .img-content {
-	margin: 10px;
 	width: 350px;
-	height: 160px;
+	height: 180px;
 	position: relative;
+	margin: 10px;
 }
 
 #content-warp .img-content a {
@@ -539,4 +535,151 @@ body::-webkit-scrollbar {
 
 .information a:hover {
 	color: var(--shadow-color);
+}
+
+@media (max-width: 1190px) {
+	#portofolio-content {
+		flex-direction: column;
+	}
+
+	#text-content {
+		width: 100%;
+		text-align: center;
+	}
+
+	#content-warp {
+		position: unset;
+		width: fit-content;
+	}
+}
+
+@media (max-width: 990px) {
+	/* ABOUT PAGE */
+	#about .desc {
+		position: relative;
+		top: 10px;
+		left: 0px;
+		padding: 0px 30px;
+	}
+
+	#about .desc p {
+		color: var(--secondary-color);
+		font-size: 18px;
+		text-align: center;
+	}
+}
+
+@media (max-width: 890px) {
+	#portofolio {
+		padding: 0px;
+	}
+
+	#text-content {
+		position: relative;
+		top: 200px;
+		font-size: 24vw;
+		padding: 0px;
+	}
+
+	#img-content {
+		position: relative;
+		top: 200px;
+	}
+
+	#content-warp {
+		grid-template-columns: auto;
+	}
+}
+
+@media (max-width: 768px) {
+	/* PRELOAD */
+	.pace {
+		max-width: 300px;
+	}
+
+	/* OVERLAY */
+	#overlay {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.overlay-menu {
+		flex: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 140px 0px;
+	}
+
+	.overlay-info {
+		height: 200px;
+		flex: none;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		max-width: fit-content;
+		text-align: center;
+	}
+
+	.overlay-info h5 {
+		font-size: 16px;
+	}
+
+	.overlay-info ul li {
+		font-size: 12px;
+	}
+
+	.overlay-menu ul li {
+		text-align: center;
+	}
+
+	.media {
+		font-size: 14px;
+		top: 250px;
+	}
+
+	/* SKILL */
+	#skill {
+		height: 140vh;
+	}
+
+	.my-skill.ml-4.mt-5 {
+		margin-top: 0px !important;
+		margin-left: 0px !important;
+	}
+
+	.my-skill .row {
+		display: unset;
+	}
+
+	.timeline h5 {
+		top: -50px;
+	}
+
+	.skill-content.col-8 {
+		max-width: unset;
+	}
+
+	.skill-content.col-4 {
+		max-width: unset;
+		margin-top: 100px;
+	}
+}
+
+@media (max-width: 510px) {
+	#content-warp .img-content {
+		position: relative;
+		max-width: 250px;
+		height: 140px;
+	}
+}
+
+@media (max-width: 474px) {
+	#text-mainpage {
+		top: 220px !important;
+	}
+
+	.media {
+		top: 220px !important;
+	}
 }

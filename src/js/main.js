@@ -158,7 +158,7 @@ function percentBar() {
 
 // ------ NEXT BUTTON ------ //
 function nextButton() {
-	$(".nav .next-btn").on("click", function () {
+	$(".menu-btn .next-btn").on("click", function () {
 		let page = $(".page").attr("page");
 
 		switch (page) {

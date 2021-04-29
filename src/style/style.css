@@ -21,12 +21,6 @@ body {
 	overflow: auto;
 	height: 100%;
 	width: 100%;
-	-ms-overflow-style: none; /* Internet Explorer 10+ */
-	scrollbar-width: none;
-}
-
-body::-webkit-scrollbar {
-	display: none; /* Safari and Chrome */
 }
 
 /* PRELOADER */
@@ -131,9 +125,11 @@ body::-webkit-scrollbar {
 }
 
 /* NAV */
-.nav {
+.menu-btn {
+	display: flex;
 	justify-content: center;
-	position: fixed;
+	position: absolute;
+	top: 0px;
 	width: 100%;
 	z-index: 80;
 }
@@ -389,7 +385,10 @@ body::-webkit-scrollbar {
 #portofolio {
 	background-color: var(--primary-color);
 	height: 100vh;
-	max-width: 100%;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	position: absolute;
 	transition: 0.4s ease-in-out;
 	display: flex;
 	align-items: center;
@@ -405,7 +404,7 @@ body::-webkit-scrollbar {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 0px 100px;
+	padding: 0px 80px;
 }
 
 #portofolio #text-content h1 {
@@ -570,10 +569,6 @@ body::-webkit-scrollbar {
 }
 
 @media (max-width: 890px) {
-	#portofolio {
-		padding: 0px;
-	}
-
 	#text-content {
 		position: relative;
 		top: 200px;
@@ -608,7 +603,7 @@ body::-webkit-scrollbar {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		padding: 140px 0px;
+		padding: 100px 0px;
 	}
 
 	.overlay-info {
@@ -638,22 +633,26 @@ body::-webkit-scrollbar {
 		top: 250px;
 	}
 
-	/* SKILL */
-	#skill {
-		height: 140vh;
+	#switch-btn {
+		bottom: 10px;
 	}
 
-	.my-skill.ml-4.mt-5 {
-		margin-top: 0px !important;
-		margin-left: 0px !important;
+	/* SKILL */
+	#skill {
+		height: 100vh;
+	}
+
+	#skill .my-skill {
+		top: 80px;
+		padding: 0px;
+	}
+
+	#skill .timeline h5 {
+		top: -50px;
 	}
 
 	.my-skill .row {
 		display: unset;
-	}
-
-	.timeline h5 {
-		top: -50px;
 	}
 
 	.skill-content.col-8 {
@@ -667,6 +666,10 @@ body::-webkit-scrollbar {
 }
 
 @media (max-width: 510px) {
+	#content-warp {
+		padding: 0px;
+	}
+
 	#content-warp .img-content {
 		position: relative;
 		max-width: 250px;

@@ -352,78 +352,78 @@ function displayPortofolio() {
 
 	$menu.append(
 		`
-        <div class="container">
-            <div id="portofolio" class="page" page="portofolio">
-                <div id="portofolio-content" class="row justify-content-between">
-                    <div id="text-content" class="col-4">
-                        <h1>WHAT <span>I'VE</span><br />BEEN <span>MAKE</span></h1>
-                    </div>
-                    <div id="content-warp" class="col-8">
-                        <div class="img-content col-5">
-                            <a
-                                href="https://github.com/IkanPakUs/E-commers-with-laravel-7"
-                                class="img-warp"
-                            >
-                                <img
-                                    src="src/img/e-commerce.PNG"
-                                    alt="e-commerce-page"
-                                    class="portofolio-img"
-                                />
-                                <div class="image-text">
-                                    <p class="date">08-11-2020</p>
-                                    <p class="img-name">E-commerces</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="img-content col-5">
-                            <a href="https://github.com/IkanPakUs/CLOCK" class="img-warp">
-                                <img
-                                    src="src/img/clock-page.PNG"
-                                    alt="clock-page"
-                                    class="portofolio-img"
-                                />
-                                <div class="image-text">
-                                    <p class="date">24-12-2020</p>
-                                    <p class="img-name">Clock Page</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="img-content col-5">
-                            <a
-                                href="https://github.com/IkanPakUs/Slide-login-page"
-                                class="img-warp"
-                            >
-                                <img
-                                    src="src/img/slide-login-page.PNG"
-                                    alt="slide-login-page"
-                                    class="portofolio-img"
-                                />
-                                <div class="image-text">
-                                    <p class="date">09-02-2021</p>
-                                    <p class="img-name">Slide Login Page</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="img-content col-5">
-                            <a
-                                href="https://github.com/IkanPakUs/Movies-SPA"
-                                class="img-warp"
-                            >
-                                <img
-                                    src="src/img/movies.JPG"
-                                    alt="Movies"
-                                    class="portofolio-img"
-                                />
-                                <div class="image-text">
-                                    <p class="date">10-03-2021</p>
-                                    <p class="img-name">Movies</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>`
+       <div id="portofolio" class="page" page="portofolio">
+			<div id="portofolio-content">
+				<div id="text-content">
+					<h1>WHAT <span>I'VE</span><br />BEEN <span>MAKE</span></h1>
+				</div>
+				<div id="img-content">
+					<div id="content-warp">
+						<div class="img-content">
+							<a
+								href="https://github.com/IkanPakUs/E-commers-with-laravel-7"
+								class="img-warp"
+							>
+								<img
+									src="src/img/e-commerce.PNG"
+									alt="e-commerce-page"
+									class="portofolio-img"
+								/>
+								<div class="image-text">
+									<p class="date">08-11-2020</p>
+									<p class="img-name">E-commerces</p>
+								</div>
+							</a>
+						</div>
+						<div class="img-content">
+							<a href="https://github.com/IkanPakUs/CLOCK" class="img-warp">
+								<img
+									src="src/img/clock-page.PNG"
+									alt="clock-page"
+									class="portofolio-img"
+								/>
+								<div class="image-text">
+									<p class="date">24-12-2020</p>
+									<p class="img-name">Clock Page</p>
+								</div>
+							</a>
+						</div>
+						<div class="img-content">
+							<a
+								href="https://github.com/IkanPakUs/Slide-login-page"
+								class="img-warp"
+							>
+								<img
+									src="src/img/slide-login-page.PNG"
+									alt="slide-login-page"
+									class="portofolio-img"
+								/>
+								<div class="image-text">
+									<p class="date">09-02-2021</p>
+									<p class="img-name">Slide Login Page</p>
+								</div>
+							</a>
+						</div>
+						<div class="img-content">
+							<a
+								href="https://github.com/IkanPakUs/Movies-SPA"
+								class="img-warp"
+							>
+								<img
+									src="src/img/movies.JPG"
+									alt="Movies"
+									class="portofolio-img"
+								/>
+								<div class="image-text">
+									<p class="date">10-03-2021</p>
+									<p class="img-name">Movies</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>`
 	);
 }
 

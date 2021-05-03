@@ -266,11 +266,14 @@ body {
 /* .DESC*/
 #about .profile-img {
 	width: 150px;
+	height: 250px;
+	overflow: hidden;
+	transition: 0.8s ease-in-out;
 }
 
 #about .img-content {
 	position: relative;
-	top: 20px;
+	top: 70px;
 }
 
 #about .bottom-img {
@@ -282,7 +285,6 @@ body {
 	border-radius: 50%;
 	background-color: var(--secondary-color);
 	overflow: hidden;
-	transition: 0.8s ease-in-out;
 }
 
 #about .img-warp {
@@ -290,9 +292,6 @@ body {
 	top: -90px;
 	left: -25px;
 	width: 200px;
-	opacity: 1;
-	transition: 0.6s ease-in-out;
-	transition-delay: 0.8s;
 }
 
 #about .img-warp.bottom {
@@ -313,6 +312,7 @@ body {
 	text-align: left;
 	transform: translateY(0px);
 	transition: 0.8s ease-in-out;
+	transition-delay: 0.8s;
 }
 
 /* SKILL PAGE */

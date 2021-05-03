@@ -9,13 +9,8 @@
 	opacity: 0;
 }
 
-.menu.animate #about .bottom-img {
-	width: 50px;
-	height: 50px;
-}
-
-.menu.animate #about .img-warp {
-	opacity: 0;
+.menu.animate #about .profile-img {
+	width: 0px;
 }
 
 .menu.animate #skill .timeline::before {

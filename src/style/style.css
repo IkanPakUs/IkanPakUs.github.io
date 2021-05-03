@@ -166,7 +166,7 @@ body {
 }
 
 .overlay-btn:hover::after,
-.next-btn:hover::after {
+.next-btn:hover::before {
 	background-color: var(--secondary-color);
 	width: 100%;
 }

@@ -5,7 +5,6 @@
 }
 
 .menu.animate #about .desc {
-	transform: translateY(50px);
 	opacity: 0;
 }
 

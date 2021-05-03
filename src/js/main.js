@@ -263,17 +263,31 @@ function displayAbout() {
 
 	$menu.append(
 		`
-        <div id="about" class="page" page="about">
-            <div class="desc">
-                <p>
-                    Hello everyone, im Komang Arya <br />im a web developer based on
-                    Indonesia, Bali. I like programming since im in senior high school,
-                    cause i think its fun to solve the problem. Now im student in STIKOM
-                    Bali<br />
-                    (Institute of Technology)
-                </p>
-            </div>
-        </div>`
+		<div id="about" class="page" page="about">
+			<div class="profile-img">
+				<div class="img-content">
+					<div class="bottom-img">
+						<div class="img-warp">
+							<img src="src/img/profile.png" alt="Komang Arya" />
+						</div>
+					</div>
+					<div class="top-img">
+						<div class="img-warp bottom">
+							<img src="src/img/profile.png" alt="Komang Arya" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="desc">
+				<p>
+					Hello everyone, im Komang Arya <br />im a web developer based on
+					Indonesia, Bali. I like programming since im in senior high school,
+					cause i think its fun to solve the problem. Now im student in STIKOM
+					Bali<br />
+					(Institute of Technology)
+				</p>
+			</div>
+		</div>`
 	);
 }
 
@@ -325,7 +339,7 @@ function displaySkill() {
                             <div class="skill-bar"></div>
                             <div class="skill-bar-percent"></div>
                         </div>
-                        <div class="my-skill-bar" percent="60%">
+                        <div class="my-skill-bar" percent="50%">
                             <div class="skill-bar-name"><p>BOOTSTRAP</p></div>
                             <div class="skill-bar"></div>
                             <div class="skill-bar-percent"></div>
@@ -361,35 +375,6 @@ function displayPortofolio() {
 					<div id="content-warp">
 						<div class="img-content">
 							<a
-								href="https://github.com/IkanPakUs/E-commers-with-laravel-7"
-								class="img-warp"
-							>
-								<img
-									src="src/img/e-commerce.PNG"
-									alt="e-commerce-page"
-									class="portofolio-img"
-								/>
-								<div class="image-text">
-									<p class="date">08-11-2020</p>
-									<p class="img-name">E-commerces</p>
-								</div>
-							</a>
-						</div>
-						<div class="img-content">
-							<a href="https://github.com/IkanPakUs/CLOCK" class="img-warp">
-								<img
-									src="src/img/clock-page.PNG"
-									alt="clock-page"
-									class="portofolio-img"
-								/>
-								<div class="image-text">
-									<p class="date">24-12-2020</p>
-									<p class="img-name">Clock Page</p>
-								</div>
-							</a>
-						</div>
-						<div class="img-content">
-							<a
 								href="https://github.com/IkanPakUs/Slide-login-page"
 								class="img-warp"
 							>
@@ -406,7 +391,7 @@ function displayPortofolio() {
 						</div>
 						<div class="img-content">
 							<a
-								href="https://github.com/IkanPakUs/Movies-SPA"
+								href="https://ikanpakus.github.io/Movies-SPA"
 								class="img-warp"
 							>
 								<img
@@ -417,6 +402,22 @@ function displayPortofolio() {
 								<div class="image-text">
 									<p class="date">10-03-2021</p>
 									<p class="img-name">Movies</p>
+								</div>
+							</a>
+						</div>
+						<div class="img-content">
+							<a
+								href="#"
+								class="img-warp"
+							>
+								<img
+									src="src/img/portofolio.JPG"
+									alt="portofolio page"
+									class="portofolio-img"
+								/>
+								<div class="image-text">
+									<p class="date">11-04-2021</p>
+									<p class="img-name">Portofolio Page</p>
 								</div>
 							</a>
 						</div>

@@ -9,6 +9,15 @@
 	opacity: 0;
 }
 
+.menu.animate #about .bottom-img {
+	width: 50px;
+	height: 50px;
+}
+
+.menu.animate #about .img-warp {
+	opacity: 0;
+}
+
 .menu.animate #skill .timeline::before {
 	height: 0%;
 }
@@ -82,7 +91,7 @@ body.dark-mode .information a {
 	color: var(--primary-color);
 }
 
-/* Overflow */
+/* Overlay */
 body.dark-mode #overlay {
 	background-color: var(--primary-color);
 }
@@ -100,4 +109,10 @@ body.dark-mode .next-btn:hover::after {
 
 body.dark-mode #skill .my-skill-bar {
 	background: var(--shadow-color);
+}
+
+/* About */
+body.dark-mode #about .bottom-img {
+	border: 2px var(--primary-color) solid;
+	background-color: var(--primary-color);
 }

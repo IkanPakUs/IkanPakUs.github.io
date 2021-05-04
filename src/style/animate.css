@@ -67,8 +67,6 @@ body.dark-mode #footer {
 
 body.dark-mode .overlay-btn,
 body.dark-mode .next-btn,
-body.dark-mode .overlay-btn:hover::after,
-body.dark-mode .next-btn:hover::after,
 body.dark-mode #text-mainpage,
 body.dark-mode .media a,
 body.dark-mode #about .desc,
@@ -85,6 +83,10 @@ body.dark-mode .information a {
 	color: var(--primary-color);
 }
 
+body.dark-mode .media a:hover {
+	color: var(--contras-color);
+}
+
 /* Overlay */
 body.dark-mode #overlay {
 	background-color: var(--primary-color);
@@ -97,7 +99,7 @@ body.dark-mode #switch-btn {
 }
 
 body.dark-mode .overlay-btn:hover::after,
-body.dark-mode .next-btn:hover::after {
+body.dark-mode .next-btn:hover::before {
 	background-color: var(--primary-color);
 }
 

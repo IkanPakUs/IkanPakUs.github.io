@@ -247,7 +247,7 @@ body {
 }
 
 .media a:hover {
-	color: var(--secondary-color);
+	color: var(--contras-color);
 }
 
 /* ABOUT ME PAGE */

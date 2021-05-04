@@ -232,7 +232,7 @@ function displayHome() {
                         <ul>
                             <li>
                                 <a href="https://twitter.com/KomangKsatria" target="_blank"
-                                    ><ion-icon name="logo-twitter"></ion-icon
+                                    ><ion-icon name="logo-twitter" aria-label="KomangKsatria"></ion-icon
                                 ></a>
                             </li>
                             <li>

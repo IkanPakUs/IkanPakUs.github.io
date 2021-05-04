@@ -105,6 +105,7 @@ function activePage() {
 
 					case "about":
 						displayAbout();
+						year();
 						animate();
 						$(`#${prev}`).detach();
 						break;
@@ -167,6 +168,7 @@ function nextButton() {
 				setTimeout(function () {
 					displayAbout();
 					setTimeout(() => {
+						year();
 						$menu.removeClass("animate");
 						$(`#${page}`).detach();
 					}, 300);
@@ -280,7 +282,7 @@ function displayAbout() {
 			</div>
 			<div class="desc">
 				<p>
-					Hello everyone, im Komang Arya <br />im a web developer based on
+					Hello everyone, im Komang Arya (<span class="age"></span> years old) <br />im a web developer based on
 					Indonesia, Bali. I like programming since im in senior high school,
 					cause i think its fun to solve the problem. Now im student in STIKOM
 					Bali<br />
@@ -466,4 +468,12 @@ function displayFooter() {
 function copyright() {
 	let year = new Date();
 	$(".copyright").html(`&#169 Copyright IkanPakUs - ${year.getFullYear()}`);
+}
+
+// ------ YEARS ------ //
+function year() {
+	let year = new Date().getFullYear();
+	let age = year - 2003;
+
+	$("span.age").html(age);
 }

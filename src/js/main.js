@@ -9,7 +9,7 @@ $window.on("load", function () {
 	"use strict";
 
 	preLoad();
-	displayHome();
+	display(homePage);
 });
 
 $(document).ready(function () {
@@ -21,10 +21,12 @@ $(document).ready(function () {
 	nextButton();
 });
 
-/**************
+/*************************************
              == FUNCTION ==
-            **************/
+*************************************/
+
 // ------ PRELOAD PAGE FUNC ------ //
+
 function preLoad() {
 	"use strict";
 
@@ -40,6 +42,7 @@ function preLoad() {
 }
 
 // ------ OVERLAY MENU ------ //
+
 function overlayMenu() {
 	"use strict";
 
@@ -62,6 +65,8 @@ function overlayMenu() {
 	});
 }
 
+// ------ SWITCH THEME FUNCTION ------ //
+
 function darkMode() {
 	"use strict";
 
@@ -82,7 +87,7 @@ function darkMode() {
 	});
 }
 
-// ------ Active Page ------ //
+// ------ ACTIVE PAGE FUNCTION ------ //
 function activePage() {
 	"use strict";
 
@@ -98,27 +103,27 @@ function activePage() {
 			} else {
 				switch (page) {
 					case "home":
-						displayHome();
+						display(homePage);
 						animate();
 						$(`#${prev}`).detach();
 						break;
 
 					case "about":
-						displayAbout();
+						display(aboutPage);
 						year();
 						animate();
 						$(`#${prev}`).detach();
 						break;
 
 					case "skill":
-						displaySkill();
+						display(skillPage);
 						animate();
 						percentBar();
 						$(`#${prev}`).detach();
 						break;
 
 					case "portofolio":
-						displayPortofolio();
+						display(portofolioPage);
 						animate();
 						$(`#${prev}`).detach();
 						break;
@@ -131,7 +136,7 @@ function activePage() {
 	});
 }
 
-// --- Animate Function --- //
+// --- ANIMATE FUNCTION --- //
 
 function animate() {
 	"use strict";
@@ -143,6 +148,7 @@ function animate() {
 }
 
 // ------ PERCENT BAR ------ //
+
 function percentBar() {
 	"use strict";
 
@@ -158,6 +164,7 @@ function percentBar() {
 }
 
 // ------ NEXT BUTTON ------ //
+
 function nextButton() {
 	$(".menu-btn .next-btn").on("click", function () {
 		let page = $(".page").attr("page");
@@ -166,7 +173,7 @@ function nextButton() {
 			case "home":
 				$menu.addClass("animate");
 				setTimeout(function () {
-					displayAbout();
+					display(aboutPage);
 					setTimeout(() => {
 						year();
 						$menu.removeClass("animate");
@@ -178,7 +185,7 @@ function nextButton() {
 			case "about":
 				$menu.addClass("animate");
 				setTimeout(function () {
-					displaySkill();
+					display(skillPage);
 					percentBar();
 					$menu.removeClass("animate");
 					$(`#${page}`).detach();
@@ -188,7 +195,7 @@ function nextButton() {
 			case "skill":
 				$menu.addClass("animate");
 				setTimeout(function () {
-					displayPortofolio();
+					display(portofolioPage);
 					setTimeout(() => {
 						$menu.removeClass("animate");
 						$(`#${page}`).detach();
@@ -199,11 +206,20 @@ function nextButton() {
 			case "portofolio":
 				$menu.addClass("animate");
 				setTimeout(function () {
-					displayFooter();
+					display(footerPage);
 					copyright();
 					$menu.removeClass("animate");
 					$(`#${page}`).detach();
 				}, 600);
+				break;
+
+			case "footer":
+				$menu.addClass("animate");
+				display(homePage);
+				setTimeout(() => {
+					$menu.removeClass("animate");
+					$(`#${page}`).detach();
+				}, 100);
 				break;
 
 			default:
@@ -212,268 +228,242 @@ function nextButton() {
 	});
 }
 
-function movingPage(page) {}
-
 // --- DISPLAYING FUNCTION --- //
 
-function displayHome() {
+function display(page) {
 	"use strict";
 
-	$menu.append(
-		`
-        <div id="home" class="page" page="home">
-            <div class="mainpage" id="mainpage">
-                <div class="content">
-                    <div id="text-mainpage">
-                        <div class="text-box">
-                            Hello, i'm Komang Arya
-                            <h3>a web developer</h3>
-                        </div>
-                    </div>
-                    <div class="media">
-                        <ul>
-                            <li>
-                                <a href="https://twitter.com/KomangKsatria" target="_blank"
-                                    ><ion-icon name="logo-twitter" aria-label="KomangKsatria"></ion-icon
-                                ></a>
-                            </li>
-                            <li>
-                                <a href="https://web.facebook.com/komang.ksatria.9/" target="_blank"
-                                    ><ion-icon name="logo-facebook"></ion-icon
-                                ></a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/mangarya.w/" target="_blank" 
-                                    ><ion-icon name="logo-instagram"></ion-icon
-                                ></a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/IkanPakUs" target="_blank"
-                                    ><ion-icon name="logo-github"></ion-icon
-                                ></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>`
-	);
-}
-
-function displayAbout() {
-	"use strict";
-
-	$menu.append(
-		`
-		<div id="about" class="page" page="about">
-			<div class="profile-img">
-				<div class="img-content">
-					<div class="bottom-img">
-						<div class="img-warp">
-							<img src="src/img/profile.png" alt="Komang Arya" />
-						</div>
-					</div>
-					<div class="top-img">
-						<div class="img-warp bottom">
-							<img src="src/img/profile.png" alt="Komang Arya" />
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="desc">
-				<p>
-					Hello everyone, im Komang Arya (<span class="age"></span> years old) <br />im a web developer based on
-					Indonesia, Bali. I like programming since im in senior high school,
-					cause i think its fun to solve the problem. Now im student in STIKOM
-					Bali<br />
-					(Institute of Technology)
-				</p>
-			</div>
-		</div>`
-	);
-}
-
-function displaySkill() {
-	"use strict";
-
-	$menu.append(
-		`
-        <div id="skill" class="page" page="skill">
-            <div class="my-skill">
-                <div class="row justify-content-end">
-                    <div class="col-8 skill-content">
-                        <div class="timeline ml-5">
-                            <h5>MY JOURNEY</h5>
-                            <ul>
-                                <li>
-                                    <div class="timeline-name">
-                                        <h4>SMKN 1 Denpasar</h4>
-                                        <p>majoring in computer and networking</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="timeline-name">
-                                        <h4>ITB Stikom Bali</h4>
-                                        <p>majoring in information systems</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-4 skill-content">
-                        <div class="my-skill-bar" percent="80%">
-                            <div class="skill-bar-name"><p>HTML</p></div>
-                            <div class="skill-bar"></div>
-                            <div class="skill-bar-percent"></div>
-                        </div>
-                        <div class="my-skill-bar" percent="75%">
-                            <div class="skill-bar-name"><p>CSS</p></div>
-                            <div class="skill-bar"></div>
-                            <div class="skill-bar-percent"></div>
-                        </div>
-                        <div class="my-skill-bar" percent="65%">
-                            <div class="skill-bar-name"><p>JAVASCRIPT</p></div>
-                            <div class="skill-bar"></div>
-                            <div class="skill-bar-percent"></div>
-                        </div>
-                        <div class="my-skill-bar" percent="40%">
-                            <div class="skill-bar-name"><p>PHP</p></div>
-                            <div class="skill-bar"></div>
-                            <div class="skill-bar-percent"></div>
-                        </div>
-                        <div class="my-skill-bar" percent="50%">
-                            <div class="skill-bar-name"><p>BOOTSTRAP</p></div>
-                            <div class="skill-bar"></div>
-                            <div class="skill-bar-percent"></div>
-                        </div>
-                        <div class="my-skill-bar" percent="35%">
-                            <div class="skill-bar-name"><p>LARAVEL</p></div>
-                            <div class="skill-bar"></div>
-                            <div class="skill-bar-percent"></div>
-                        </div>
-                        <div class="my-skill-bar" percent="50%">
-                            <div class="skill-bar-name"><p>JQUERY</p></div>
-                            <div class="skill-bar"></div>
-                            <div class="skill-bar-percent"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>`
-	);
-}
-
-function displayPortofolio() {
-	"use strict";
-
-	$menu.append(
-		`
-       <div id="portofolio" class="page" page="portofolio">
-			<div id="portofolio-content">
-				<div id="text-content">
-					<h1>WHAT <span>I'VE</span><br />BEEN <span>MAKE</span></h1>
-				</div>
-				<div id="img-content">
-					<div id="content-warp">
-						<div class="img-content">
-							<a
-								href="https://github.com/IkanPakUs/Slide-login-page"
-								class="img-warp"
-							>
-								<img
-									src="src/img/slide-login-page.PNG"
-									alt="slide-login-page"
-									class="portofolio-img"
-								/>
-								<div class="image-text">
-									<p class="date">09-02-2021</p>
-									<p class="img-name">Slide Login Page</p>
-								</div>
-							</a>
-						</div>
-						<div class="img-content">
-							<a
-								href="https://ikanpakus.github.io/Movies-SPA"
-								class="img-warp"
-							>
-								<img
-									src="src/img/movies.JPG"
-									alt="Movies"
-									class="portofolio-img"
-								/>
-								<div class="image-text">
-									<p class="date">10-03-2021</p>
-									<p class="img-name">Movies</p>
-								</div>
-							</a>
-						</div>
-						<div class="img-content">
-							<a
-								href="#"
-								class="img-warp"
-							>
-								<img
-									src="src/img/portofolio.JPG"
-									alt="portofolio page"
-									class="portofolio-img"
-								/>
-								<div class="image-text">
-									<p class="date">11-04-2021</p>
-									<p class="img-name">Portofolio Page</p>
-								</div>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>`
-	);
-}
-
-function displayFooter() {
-	"use strict";
-
-	$menu.append(
-		`
-        <div id="footer" class="d-flex align-items-center justify-content-around page" page="footer">
-            <div class="logo col-12 footer-content">
-                <h3>mang arya</h3>
-                <div class="footer-info">
-                    <ul>
-                        <li>Mail : Komanggede86@gmail.com</li>
-                        <li>Phone : +62 896 5672 0690</li>
-                    </ul>
-                </div>
-                <div class="information">
-                    <a href="https://twitter.com/KomangKsatria" target="_blank"
-                        ><ion-icon name="logo-twitter"></ion-icon
-                    ></a>
-                    <a href="https://web.facebook.com/komang.ksatria.9/" target="_blank"
-                        ><ion-icon name="logo-facebook"></ion-icon
-                    ></a>
-                    <a href="https://www.instagram.com/mangarya.w/" target="_blank"
-                        ><ion-icon name="logo-instagram"></ion-icon
-                    ></a>
-                    <a href="https://github.com/IkanPakUs" target="_blank"
-                        ><ion-icon name="logo-github"></ion-icon
-                    ></a>
-                </div>
-                <div class="copyright"></div>
-            </div>
-        </div>`
-	);
+	$menu.append(page);
 }
 
 // ------ COPYRIGHT ------ //
+
 function copyright() {
 	let year = new Date();
 	$(".copyright").html(`&#169 Copyright IkanPakUs - ${year.getFullYear()}`);
 }
 
 // ------ YEARS ------ //
+
 function year() {
 	let year = new Date().getFullYear();
 	let age = year - 2003;
 
 	$("span.age").html(age);
 }
+
+// ------ CAUTION FOR YOUR EYES ------ //
+// ------ HTML TEMPLATE ------ //
+
+const homePage = `<div id="home" class="page" page="home">
+						<div class="mainpage" id="mainpage">
+							<div class="content">
+								<div id="text-mainpage">
+									<div class="text-box">
+										Hello, i'm Komang Arya
+										<h3>a web developer</h3>
+									</div>
+								</div>
+								<div class="media">
+									<ul>
+										<li>
+											<a href="https://twitter.com/KomangKsatria" target="_blank"
+												><ion-icon name="logo-twitter" aria-label="KomangKsatria"></ion-icon
+											></a>
+										</li>
+										<li>
+											<a href="https://web.facebook.com/komang.ksatria.9/" target="_blank"
+												><ion-icon name="logo-facebook"></ion-icon
+											></a>
+										</li>
+										<li>
+											<a href="https://www.instagram.com/mangarya.w/" target="_blank" 
+												><ion-icon name="logo-instagram"></ion-icon
+											></a>
+										</li>
+										<li>
+											<a href="https://github.com/IkanPakUs" target="_blank"
+												><ion-icon name="logo-github"></ion-icon
+											></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>`;
+
+const aboutPage = `<div id="about" class="page" page="about">
+						<div class="profile-img">
+							<div class="img-content">
+								<div class="bottom-img">
+									<div class="img-warp">
+										<img src="src/img/profile.png" alt="Komang Arya" />
+									</div>
+								</div>
+								<div class="top-img">
+									<div class="img-warp bottom">
+										<img src="src/img/profile.png" alt="Komang Arya" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="desc">
+							<p>
+								Hello everyone, im Komang Arya (<span class="age"></span> years old) <br />im a web developer based on
+								Indonesia, Bali. I like programming since im in senior high school,
+								cause i think its fun to solve the problem. Now im student in STIKOM
+								Bali<br />
+								(Institute of Technology)
+							</p>
+						</div>
+					</div>`;
+
+const skillPage = `<div id="skill" class="page" page="skill">
+						<div class="my-skill">
+							<div class="row justify-content-end">
+								<div class="col-8 skill-content">
+									<div class="timeline ml-5">
+										<h5>MY JOURNEY</h5>
+										<ul>
+											<li>
+												<div class="timeline-name">
+													<h4>SMKN 1 Denpasar</h4>
+													<p>majoring in computer and networking</p>
+												</div>
+											</li>
+											<li>
+												<div class="timeline-name">
+													<h4>ITB Stikom Bali</h4>
+													<p>majoring in information systems</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-4 skill-content">
+									<div class="my-skill-bar" percent="80%">
+										<div class="skill-bar-name"><p>HTML</p></div>
+										<div class="skill-bar"></div>
+										<div class="skill-bar-percent"></div>
+									</div>
+									<div class="my-skill-bar" percent="75%">
+										<div class="skill-bar-name"><p>CSS</p></div>
+										<div class="skill-bar"></div>
+										<div class="skill-bar-percent"></div>
+									</div>
+									<div class="my-skill-bar" percent="65%">
+										<div class="skill-bar-name"><p>JAVASCRIPT</p></div>
+										<div class="skill-bar"></div>
+										<div class="skill-bar-percent"></div>
+									</div>
+									<div class="my-skill-bar" percent="40%">
+										<div class="skill-bar-name"><p>PHP</p></div>
+										<div class="skill-bar"></div>
+										<div class="skill-bar-percent"></div>
+									</div>
+									<div class="my-skill-bar" percent="50%">
+										<div class="skill-bar-name"><p>BOOTSTRAP</p></div>
+										<div class="skill-bar"></div>
+										<div class="skill-bar-percent"></div>
+									</div>
+									<div class="my-skill-bar" percent="50%">
+										<div class="skill-bar-name"><p>JQUERY</p></div>
+										<div class="skill-bar"></div>
+										<div class="skill-bar-percent"></div>
+									</div>
+									<div class="my-skill-bar" percent="35%">
+										<div class="skill-bar-name"><p>LARAVEL</p></div>
+										<div class="skill-bar"></div>
+										<div class="skill-bar-percent"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>`;
+
+const portofolioPage = `<div id="portofolio" class="page" page="portofolio">
+							<div id="portofolio-content">
+								<div id="text-content">
+									<h1>WHAT <span>I'VE</span><br />BEEN <span>MAKE</span></h1>
+								</div>
+								<div id="img-content">
+									<div id="content-warp">
+										<div class="img-content">
+											<a
+												href="https://github.com/IkanPakUs/Slide-login-page"
+												class="img-warp"
+											>
+												<img
+													src="src/img/slide-login-page.PNG"
+													alt="slide-login-page"
+													class="portofolio-img"
+												/>
+												<div class="image-text">
+													<p class="date">09-02-2021</p>
+													<p class="img-name">Slide Login Page</p>
+												</div>
+											</a>
+										</div>
+										<div class="img-content">
+											<a
+												href="https://ikanpakus.github.io/Movies-SPA"
+												class="img-warp"
+											>
+												<img
+													src="src/img/movies.JPG"
+													alt="Movies"
+													class="portofolio-img"
+												/>
+												<div class="image-text">
+													<p class="date">10-03-2021</p>
+													<p class="img-name">Movies</p>
+												</div>
+											</a>
+										</div>
+										<div class="img-content">
+											<a
+												href="#"
+												class="img-warp"
+											>
+												<img
+													src="src/img/portofolio.JPG"
+													alt="portofolio page"
+													class="portofolio-img"
+												/>
+												<div class="image-text">
+													<p class="date">11-04-2021</p>
+													<p class="img-name">Portofolio Page</p>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>`;
+
+const footerPage = `<div id="footer" class="d-flex align-items-center justify-content-around page" page="footer">
+						<div class="logo col-12 footer-content">
+							<h3>mang arya</h3>
+							<div class="footer-info">
+								<ul>
+									<li>Mail : Komanggede86@gmail.com</li>
+									<li>Phone : +62 896 5672 0690</li>
+								</ul>
+							</div>
+							<div class="information">
+								<a href="https://twitter.com/KomangKsatria" target="_blank"
+									><ion-icon name="logo-twitter"></ion-icon
+								></a>
+								<a href="https://web.facebook.com/komang.ksatria.9/" target="_blank"
+									><ion-icon name="logo-facebook"></ion-icon
+								></a>
+								<a href="https://www.instagram.com/mangarya.w/" target="_blank"
+									><ion-icon name="logo-instagram"></ion-icon
+								></a>
+								<a href="https://github.com/IkanPakUs" target="_blank"
+									><ion-icon name="logo-github"></ion-icon
+								></a>
+							</div>
+							<div class="copyright"></div>
+						</div>
+					</div>`;

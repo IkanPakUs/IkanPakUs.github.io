@@ -446,7 +446,7 @@ const footerPage = `<div id="footer" class="d-flex align-items-center justify-co
 							<h3>mang arya</h3>
 							<div class="footer-info">
 								<ul>
-									<li>Mail : Komanggede86@gmail.com</li>
+									<li>Mail : Km.aryawirawan@gmail.com</li>
 									<li>Phone : +62 896 5672 0690</li>
 								</ul>
 							</div>

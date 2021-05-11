@@ -261,7 +261,7 @@ const homePage = `<div id="home" class="page" page="home">
 								<div id="text-mainpage">
 									<div class="text-box">
 										Hello, i'm Komang Arya
-										<h3>a web developer</h3>
+										<h3>&lt;h3&gt; a web developer &lt;/h3&gt;</h3>
 									</div>
 								</div>
 								<div class="media">

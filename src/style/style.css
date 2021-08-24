@@ -335,26 +335,34 @@ body {
 #skill .timeline::before {
 	content: "";
 	position: absolute;
-	top: 29px;
+	top: 45px;
 	width: 2px;
 	height: 100%;
 	background-color: var(--shadow-color);
 	transition: 0.6s ease-in-out;
 }
 
-#skill .timeline h5 {
+#skill .timeline h2 {
 	position: absolute;
 	color: var(--secondary-color);
 	top: 0px;
+	left: 48px;
 }
 
-#skill .timeline p {
+#skill .timeline p,
+#skill .timeline small {
 	color: var(--shadow-color);
+	margin-bottom: 0px !important;
+}
+
+#skill .timeline ul {
+	position: relative;
+	top: 35px;
 }
 
 #skill .timeline ul li {
 	position: relative;
-	margin-top: 60px;
+	margin-top: 35px;
 	color: var(--secondary-color);
 	margin-left: 20px;
 	list-style: none;
@@ -701,6 +709,18 @@ body {
 
 	#skill .timeline h5 {
 		top: -50px;
+	}
+
+	#skill .timeline ul {
+		top: 85px;
+	}
+
+	#skill .skill-content:last-of-type {
+		top: 95px;
+	}
+
+	#skill .skill-content.col-4 {
+		height: 325px;
 	}
 
 	.my-skill .row {

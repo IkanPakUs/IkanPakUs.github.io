@@ -323,18 +323,27 @@ const skillPage = `<div id="skill" class="page" page="skill">
 							<div class="row justify-content-end">
 								<div class="col-8 skill-content">
 									<div class="timeline ml-5">
-										<h5>MY JOURNEY</h5>
+										<h2>MY JOURNEY</h2>
 										<ul>
 											<li>
 												<div class="timeline-name">
 													<h4>SMKN 1 Denpasar</h4>
 													<p>majoring in computer and networking</p>
+													<small>2017 - 2020</small>
 												</div>
 											</li>
 											<li>
 												<div class="timeline-name">
 													<h4>ITB Stikom Bali</h4>
 													<p>majoring in information systems</p>
+													<small>2020 - Now</small>
+												</div>
+											</li>
+											<li>
+												<div class="timeline-name">
+													<h4>Pt.Omni Hotelier Internasional</h4>
+													<p>Junior fullstack developer</p>
+													<small>2021 - Now</small>
 												</div>
 											</li>
 										</ul>
@@ -346,32 +355,32 @@ const skillPage = `<div id="skill" class="page" page="skill">
 										<div class="skill-bar"></div>
 										<div class="skill-bar-percent"></div>
 									</div>
-									<div class="my-skill-bar" percent="75%">
+									<div class="my-skill-bar" percent="80%">
 										<div class="skill-bar-name"><p>CSS</p></div>
 										<div class="skill-bar"></div>
 										<div class="skill-bar-percent"></div>
 									</div>
-									<div class="my-skill-bar" percent="65%">
+									<div class="my-skill-bar" percent="70%">
 										<div class="skill-bar-name"><p>JAVASCRIPT</p></div>
 										<div class="skill-bar"></div>
 										<div class="skill-bar-percent"></div>
 									</div>
-									<div class="my-skill-bar" percent="40%">
+									<div class="my-skill-bar" percent="60%">
 										<div class="skill-bar-name"><p>PHP</p></div>
 										<div class="skill-bar"></div>
 										<div class="skill-bar-percent"></div>
 									</div>
-									<div class="my-skill-bar" percent="50%">
+									<div class="my-skill-bar" percent="70%">
 										<div class="skill-bar-name"><p>BOOTSTRAP</p></div>
 										<div class="skill-bar"></div>
 										<div class="skill-bar-percent"></div>
 									</div>
-									<div class="my-skill-bar" percent="50%">
+									<div class="my-skill-bar" percent="65%">
 										<div class="skill-bar-name"><p>JQUERY</p></div>
 										<div class="skill-bar"></div>
 										<div class="skill-bar-percent"></div>
 									</div>
-									<div class="my-skill-bar" percent="35%">
+									<div class="my-skill-bar" percent="50%">
 										<div class="skill-bar-name"><p>LARAVEL</p></div>
 										<div class="skill-bar"></div>
 										<div class="skill-bar-percent"></div>

@@ -309,7 +309,7 @@ body {
 #about .desc {
 	padding-left: 30px;
 	color: var(--secondary-color);
-	width: 400px;
+	max-width: 400px;
 	text-align: left;
 	transform: translateY(0px);
 	transition: 0.8s ease-in-out;
@@ -623,14 +623,14 @@ body {
 @media (max-width: 890px) {
 	#text-content {
 		position: relative;
-		top: 200px;
+		top: 65px;
 		font-size: 24vw;
 		padding: 0px;
 	}
 
 	#img-content {
 		position: relative;
-		top: 200px;
+		top: 15px;
 	}
 
 	#content-warp {

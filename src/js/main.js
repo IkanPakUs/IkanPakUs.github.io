@@ -261,7 +261,7 @@ const homePage = `<div id="home" class="page" page="home">
 								<div id="text-mainpage">
 									<div class="text-box">
 										Hello, i'm Komang Arya
-										<h3>&lt;h3&gt; a web developer &lt;/h3&gt;</h3>
+										<h3>a web developer</h3>
 									</div>
 								</div>
 								<div class="media">
@@ -446,7 +446,7 @@ const footerPage = `<div id="footer" class="d-flex align-items-center justify-co
 							<h3>mang arya</h3>
 							<div class="footer-info">
 								<ul>
-									<li>Mail : Km.aryawirawan@gmail.com</li>
+									<li>Mail : km.aryawirawan@gmail.com</li>
 									<li>Phone : +62 896 5672 0690</li>
 								</ul>
 							</div>

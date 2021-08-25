@@ -327,9 +327,9 @@ const skillPage = `<div id="skill" class="page" page="skill">
 										<ul>
 											<li>
 												<div class="timeline-name">
-													<h4>SMKN 1 Denpasar</h4>
-													<p>majoring in computer and networking</p>
-													<small>2017 - 2020</small>
+													<h4>Pt.Omni Hotelier Internasional</h4>
+													<p>Junior fullstack developer</p>
+													<small>2021 - Now</small>
 												</div>
 											</li>
 											<li>
@@ -341,9 +341,9 @@ const skillPage = `<div id="skill" class="page" page="skill">
 											</li>
 											<li>
 												<div class="timeline-name">
-													<h4>Pt.Omni Hotelier Internasional</h4>
-													<p>Junior fullstack developer</p>
-													<small>2021 - Now</small>
+													<h4>SMKN 1 Denpasar</h4>
+													<p>majoring in computer and networking</p>
+													<small>2017 - 2020</small>
 												</div>
 											</li>
 										</ul>

@@ -451,7 +451,7 @@ const portofolioPage = `<div id="portofolio" class="page" page="portofolio">
 												class="img-warp"
 											>
 												<img
-													src="src/img/portofolio.JPG"
+													src="src/img/covid-map.png"
 													alt="portofolio page"
 													class="portofolio-img"
 												/>

@@ -445,6 +445,22 @@ const portofolioPage = `<div id="portofolio" class="page" page="portofolio">
 												</div>
 											</a>
 										</div>
+										<div class="img-content">
+											<a
+												href="https://ikanpakus.github.io/bersama-waspada/"
+												class="img-warp"
+											>
+												<img
+													src="src/img/portofolio.JPG"
+													alt="portofolio page"
+													class="portofolio-img"
+												/>
+												<div class="image-text">
+													<p class="date">19-09-2021</p>
+													<p class="img-name">Covid Map Page</p>
+												</div>
+											</a>
+										</div>
 									</div>
 								</div>
 							</div>

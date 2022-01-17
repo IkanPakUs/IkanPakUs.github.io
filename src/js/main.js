@@ -172,6 +172,7 @@ function nextButton() {
 		switch (page) {
 			case "home":
 				$menu.addClass("animate");
+				$(".menu-btn").addClass('disable');
 				setTimeout(function () {
 					display(aboutPage);
 					setTimeout(() => {
@@ -179,46 +180,55 @@ function nextButton() {
 						$menu.removeClass("animate");
 						$(`#${page}`).detach();
 					}, 300);
+					$(".menu-btn").removeClass('disable');
 				}, 800);
 				break;
 
 			case "about":
 				$menu.addClass("animate");
+				$(".menu-btn").addClass('disable');
 				setTimeout(function () {
 					display(skillPage);
 					percentBar();
 					$menu.removeClass("animate");
 					$(`#${page}`).detach();
+					$(".menu-btn").removeClass('disable');
 				}, 600);
 				break;
 
 			case "skill":
 				$menu.addClass("animate");
+				$(".menu-btn").addClass('disable');
 				setTimeout(function () {
 					display(portofolioPage);
 					setTimeout(() => {
 						$menu.removeClass("animate");
 						$(`#${page}`).detach();
 					}, 100);
+					$(".menu-btn").removeClass('disable');
 				}, 1500);
 				break;
 
 			case "portofolio":
 				$menu.addClass("animate");
+				$(".menu-btn").addClass('disable');
 				setTimeout(function () {
 					display(footerPage);
 					copyright();
 					$menu.removeClass("animate");
 					$(`#${page}`).detach();
+					$(".menu-btn").removeClass('disable');
 				}, 600);
 				break;
 
 			case "footer":
 				$menu.addClass("animate");
+				$(".menu-btn").addClass('disable');
 				display(homePage);
 				setTimeout(() => {
 					$menu.removeClass("animate");
 					$(`#${page}`).detach();
+					$(".menu-btn").removeClass('disable');
 				}, 100);
 				break;
 

@@ -134,6 +134,11 @@ body {
 	z-index: 80;
 }
 
+.menu-btn.disable {
+	pointer-events: none;
+	cursor: none;
+}
+
 .overlay-btn,
 .next-btn {
 	color: var(--secondary-color);

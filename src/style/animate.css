@@ -68,6 +68,7 @@ body.dark-mode #footer {
 body.dark-mode .overlay-btn,
 body.dark-mode .next-btn,
 body.dark-mode #text-mainpage,
+body.dark-mode #text-mainpage h3,
 body.dark-mode .media a,
 body.dark-mode #about .desc p,
 body.dark-mode #skill .timeline h2,
@@ -101,6 +102,10 @@ body.dark-mode #switch-btn {
 body.dark-mode .overlay-btn:hover::after,
 body.dark-mode .next-btn:hover::before {
 	background-color: var(--primary-color);
+}
+
+body.dark-mode #text-mainpage .timeline .line {
+	background-color: var(--light-color);
 }
 
 body.dark-mode #skill .my-skill-bar {

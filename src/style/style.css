@@ -215,19 +215,44 @@ body {
 	position: relative;
 	text-align: center;
 	overflow: hidden;
-	padding: 0px 30px;
+	padding: 0px 20%;
+	box-sizing: border-box;
+	width: 100%;
 }
 
 #text-mainpage .text-box {
 	transform: translateY(0px);
 	opacity: 1;
 	transition: 0.8s ease-in-out;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#text-mainpage h1 {
+	font-weight: bold;
+	font-size: 6vw;
+	color: var(--contras-color);
 }
 
 #text-mainpage h3 {
-	font-weight: bold;
-	font-size: 24px;
-	color: var(--contras-color);
+	font-size: 2vw;
+	color: var(--secondary-color);
+}
+
+#text-mainpage .timeline {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 18px;
+	width: 60%;
+	margin-bottom: 30px;
+}
+
+#text-mainpage .timeline .line {
+	width: 80%;
+	height: 3px;
+	background-color: var(--shadow-color);
 }
 
 /* .. MEDIA */
@@ -622,6 +647,18 @@ body {
 		position: unset;
 		width: fit-content;
 	}
+
+	#text-mainpage {
+		padding: 0px !important;
+	}
+
+	#text-mainpage .timeline {
+		width: 65%;
+	}
+
+	#text-mainpage h1 {
+		font-size: 9vw;
+	}
 }
 
 @media (max-width: 990px) {
@@ -637,6 +674,14 @@ body {
 		color: var(--secondary-color);
 		font-size: 18px;
 		text-align: center;
+	}
+
+	#text-mainpage h3 {
+		font-size: 3vw;
+	}
+
+	#text-mainpage h1 {
+		font-size: 10vw;
 	}
 }
 
@@ -655,6 +700,10 @@ body {
 
 	#content-warp {
 		grid-template-columns: auto;
+	}
+
+	#text-mainpage .timeline .line {
+		width: 70%;
 	}
 }
 
@@ -742,6 +791,14 @@ body {
 		max-width: unset;
 		margin-top: 100px;
 	}
+
+	#text-mainpage h1 {
+		font-size: 10vw;
+	}
+
+	#text-mainpage .timeline .line {
+		width: 70%;
+	}
 }
 
 @media (max-width: 510px) {
@@ -754,10 +811,30 @@ body {
 		max-width: 250px;
 		height: 140px;
 	}
+
+	#text-mainpage .timeline {
+		margin-bottom: 20px;
+	}
+
+	#text-mainpage .timeline .line {
+		width: 60%;
+	}
+
+	#text-mainpage h3 {
+		font-size: 4vw;
+	}
 }
 
 @media (max-width: 474px) {
 	#portofolio-content {
 		padding-top: 100px;
+	}
+
+	#text-mainpage .timeline {
+		width: 70%;
+	}
+
+	#text-mainpage .timeline .line {
+		width: 55%;
 	}
 }

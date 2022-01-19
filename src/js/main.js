@@ -266,41 +266,50 @@ function year() {
 // ------ HTML TEMPLATE ------ //
 
 const homePage = `<div id="home" class="page" page="home">
-						<div class="mainpage" id="mainpage">
-							<div class="content">
-								<div id="text-mainpage">
-									<div class="text-box">
-										Hello, i'm Komang Arya
-										<h3>a web developer</h3>
+					<div class="mainpage" id="mainpage">
+						<div class="content">
+							<div id="text-mainpage">
+								<div class="text-box">
+									<h1>WEB DEVELOPER</h1>
+									<div class="timeline">
+										<div class="year">
+											2020
+										</div>
+										<div class="line"></div>
+										<div class="year">
+											Present
+										</div>
 									</div>
-								</div>
-								<div class="media">
-									<ul>
-										<li>
-											<a href="https://twitter.com/KomangKsatria" target="_blank"
-												><ion-icon name="logo-twitter" aria-label="KomangKsatria"></ion-icon
-											></a>
-										</li>
-										<li>
-											<a href="https://web.facebook.com/komang.ksatria.9/" target="_blank"
-												><ion-icon name="logo-facebook"></ion-icon
-											></a>
-										</li>
-										<li>
-											<a href="https://www.instagram.com/mangarya.w/" target="_blank" 
-												><ion-icon name="logo-instagram"></ion-icon
-											></a>
-										</li>
-										<li>
-											<a href="https://github.com/IkanPakUs" target="_blank"
-												><ion-icon name="logo-github"></ion-icon
-											></a>
-										</li>
-									</ul>
+									<h3>Mang Arya</h3>
 								</div>
 							</div>
+							<div class="media">
+								<ul>
+									<li>
+										<a href="https://twitter.com/KomangKsatria" target="_blank">
+											<ion-icon name="logo-twitter" aria-label="KomangKsatria"></ion-icon>
+										</a>
+									</li>
+									<li>
+										<a href="https://web.facebook.com/komang.ksatria.9/" target="_blank">
+											<ion-icon name="logo-facebook"></ion-icon>
+										</a>
+									</li>
+									<li>
+										<a href="https://www.instagram.com/mangarya.w/" target="_blank">
+											<ion-icon name="logo-instagram"></ion-icon>
+										</a>
+									</li>
+									<li>
+										<a href="https://github.com/IkanPakUs" target="_blank">
+											<ion-icon name="logo-github"></ion-icon>
+										</a>
+									</li>
+								</ul>
+							</div>
 						</div>
-					</div>`;
+					</div>
+				</div>`;
 
 const aboutPage = `<div id="about" class="page" page="about">
 						<div class="profile-img">
@@ -375,7 +384,7 @@ const skillPage = `<div id="skill" class="page" page="skill">
 										<div class="skill-bar"></div>
 										<div class="skill-bar-percent"></div>
 									</div>
-									<div class="my-skill-bar" percent="60%">
+									<div class="my-skill-bar" percent="75%">
 										<div class="skill-bar-name"><p>PHP</p></div>
 										<div class="skill-bar"></div>
 										<div class="skill-bar-percent"></div>
@@ -385,13 +394,18 @@ const skillPage = `<div id="skill" class="page" page="skill">
 										<div class="skill-bar"></div>
 										<div class="skill-bar-percent"></div>
 									</div>
-									<div class="my-skill-bar" percent="65%">
+									<div class="my-skill-bar" percent="75%">
 										<div class="skill-bar-name"><p>JQUERY</p></div>
 										<div class="skill-bar"></div>
 										<div class="skill-bar-percent"></div>
 									</div>
-									<div class="my-skill-bar" percent="50%">
+									<div class="my-skill-bar" percent="80%">
 										<div class="skill-bar-name"><p>LARAVEL</p></div>
+										<div class="skill-bar"></div>
+										<div class="skill-bar-percent"></div>
+									</div>
+									<div class="my-skill-bar" percent="50%">
+										<div class="skill-bar-name"><p>VUE JS</p></div>
 										<div class="skill-bar"></div>
 										<div class="skill-bar-percent"></div>
 									</div>

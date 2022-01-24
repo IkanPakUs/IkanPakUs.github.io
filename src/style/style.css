@@ -324,14 +324,14 @@ body {
 
 #about .img-warp {
 	position: absolute;
-	top: -90px;
-	left: -25px;
+	top: -122px;
+	left: -30px;
 	width: 200px;
 }
 
 #about .img-warp.bottom {
-	top: -108px;
-	left: -23px;
+	top: -140px;
+	left: -28px;
 	height: 180px;
 	overflow: hidden;
 }

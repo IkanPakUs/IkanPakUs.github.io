@@ -291,19 +291,24 @@ const homePage = `<div id="home" class="page" page="home">
 										</a>
 									</li>
 									<li>
-										<a href="https://web.facebook.com/komang.ksatria.9/" target="_blank">
-											<ion-icon name="logo-facebook"></ion-icon>
+										<a href="https://www.instagram.com/mangarya.w/" target="_blank">
+											<ion-icon name="logo-instagram"></ion-icon>
 										</a>
 									</li>
 									<li>
-										<a href="https://www.instagram.com/mangarya.w/" target="_blank">
-											<ion-icon name="logo-instagram"></ion-icon>
+										<a href="https://www.linkedin.com/in/komang-arya-607975211/" target="_blank">
+											<ion-icon name="logo-linkedin"></ion-icon>
 										</a>
 									</li>
 									<li>
 										<a href="https://github.com/IkanPakUs" target="_blank">
 											<ion-icon name="logo-github"></ion-icon>
 										</a>
+									</li>
+									<li>
+										<a href="https://gitlab.com/IkanPakUs" target="_blank"
+											><ion-icon name="logo-gitlab"></ion-icon
+										></a>
 									</li>
 								</ul>
 							</div>
@@ -503,14 +508,17 @@ const footerPage = `<div id="footer" class="d-flex align-items-center justify-co
 								<a href="https://twitter.com/KomangKsatria" target="_blank"
 									><ion-icon name="logo-twitter"></ion-icon
 								></a>
-								<a href="https://web.facebook.com/komang.ksatria.9/" target="_blank"
-									><ion-icon name="logo-facebook"></ion-icon
-								></a>
 								<a href="https://www.instagram.com/mangarya.w/" target="_blank"
 									><ion-icon name="logo-instagram"></ion-icon
 								></a>
+								<a href="https://www.linkedin.com/in/komang-arya-607975211/" target="_blank"
+									><ion-icon name="logo-linkedin"></ion-icon
+								></a>
 								<a href="https://github.com/IkanPakUs" target="_blank"
 									><ion-icon name="logo-github"></ion-icon
+								></a>
+								<a href="https://gitlab.com/IkanPakUs" target="_blank"
+									><ion-icon name="logo-gitlab"></ion-icon
 								></a>
 							</div>
 							<div class="copyright"></div>

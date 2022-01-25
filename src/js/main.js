@@ -270,47 +270,51 @@ const homePage = `<div id="home" class="page" page="home">
 						<div class="content">
 							<div id="text-mainpage">
 								<div class="text-box">
-									<h1>WEB DEVELOPER</h1>
-									<div class="timeline">
-										<div class="year">
-											2020
+									<div class="top-content">
+										<div class="greeting">
+											<h3>hi im</h3>
 										</div>
 										<div class="line"></div>
-										<div class="year">
-											Present
+									</div>
+									<div class="center-content">
+										<h1>mang arya</h1>
+									</div>
+									<div class="bottom-content">
+										<div class="media">
+											<ul>
+												<li>
+													<a href="https://twitter.com/KomangKsatria" target="_blank">
+														<ion-icon name="logo-twitter" aria-label="KomangKsatria"></ion-icon>
+													</a>
+												</li>
+												<li>
+													<a href="https://www.instagram.com/mangarya.w/" target="_blank">
+														<ion-icon name="logo-instagram"></ion-icon>
+													</a>
+												</li>
+												<li>
+													<a href="https://www.linkedin.com/in/komang-arya-607975211/"
+														target="_blank">
+														<ion-icon name="logo-linkedin"></ion-icon>
+													</a>
+												</li>
+												<li>
+													<a href="https://github.com/IkanPakUs" target="_blank">
+														<ion-icon name="logo-github"></ion-icon>
+													</a>
+												</li>
+												<li>
+													<a href="https://gitlab.com/IkanPakUs" target="_blank">
+														<ion-icon name="logo-gitlab"></ion-icon>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div class="profesion">
+											<h3>web developer</h3>
 										</div>
 									</div>
-									<h3>Mang Arya</h3>
 								</div>
-							</div>
-							<div class="media">
-								<ul>
-									<li>
-										<a href="https://twitter.com/KomangKsatria" target="_blank">
-											<ion-icon name="logo-twitter" aria-label="KomangKsatria"></ion-icon>
-										</a>
-									</li>
-									<li>
-										<a href="https://www.instagram.com/mangarya.w/" target="_blank">
-											<ion-icon name="logo-instagram"></ion-icon>
-										</a>
-									</li>
-									<li>
-										<a href="https://www.linkedin.com/in/komang-arya-607975211/" target="_blank">
-											<ion-icon name="logo-linkedin"></ion-icon>
-										</a>
-									</li>
-									<li>
-										<a href="https://github.com/IkanPakUs" target="_blank">
-											<ion-icon name="logo-github"></ion-icon>
-										</a>
-									</li>
-									<li>
-										<a href="https://gitlab.com/IkanPakUs" target="_blank"
-											><ion-icon name="logo-gitlab"></ion-icon
-										></a>
-									</li>
-								</ul>
 							</div>
 						</div>
 					</div>

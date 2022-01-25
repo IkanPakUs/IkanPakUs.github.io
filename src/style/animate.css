@@ -4,6 +4,11 @@
 	opacity: 0;
 }
 
+.menu.animate #text-mainpage .top-content .line {
+	width: 0%;
+	opacity: 0;
+}
+
 .menu.animate #about .desc {
 	opacity: 0;
 }

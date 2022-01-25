@@ -73,8 +73,7 @@ body.dark-mode #footer {
 body.dark-mode .overlay-btn,
 body.dark-mode .next-btn,
 body.dark-mode #text-mainpage,
-body.dark-mode #text-mainpage h3,
-body.dark-mode .media a,
+body.dark-mode #text-mainpage .center-content h1,
 body.dark-mode #about .desc p,
 body.dark-mode #skill .timeline h2,
 body.dark-mode #skill .timeline ul li,
@@ -87,6 +86,11 @@ body.dark-mode .footer-info,
 body.dark-mode .copyright,
 body.dark-mode .information a {
 	color: var(--primary-color);
+}
+
+body.dark-mode #text-mainpage .top-content h3,
+body.dark-mode .media a {
+	color: var(--light-color);
 }
 
 body.dark-mode .media a:hover {

@@ -432,22 +432,6 @@ const portofolioPage = `<div id="portofolio" class="page" page="portofolio">
 									<div id="content-warp">
 										<div class="img-content">
 											<a
-												href="https://github.com/IkanPakUs/Slide-login-page"
-												class="img-warp"
-											>
-												<img
-													src="src/img/slide-login-page.PNG"
-													alt="slide-login-page"
-													class="portofolio-img"
-												/>
-												<div class="image-text">
-													<p class="date">09-02-2021</p>
-													<p class="img-name">Slide Login Page</p>
-												</div>
-											</a>
-										</div>
-										<div class="img-content">
-											<a
 												href="https://ikanpakus.github.io/Movies-SPA"
 												class="img-warp"
 											>
@@ -485,12 +469,28 @@ const portofolioPage = `<div id="portofolio" class="page" page="portofolio">
 											>
 												<img
 													src="src/img/covid-map.png"
-													alt="portofolio page"
+													alt="bersama waspada"
 													class="portofolio-img"
 												/>
 												<div class="image-text">
 													<p class="date">19-09-2021</p>
 													<p class="img-name">Covid Map Page</p>
+												</div>
+											</a>
+										</div>
+										<div class="img-content">
+											<a
+												href="https://github.com/IkanPakUs/Mathler-KW/"
+												class="img-warp"
+											>
+												<img
+													src="src/img/covid-map.png"
+													alt="Mathler KW"
+													class="portofolio-img"
+												/>
+												<div class="image-text">
+													<p class="date">27-02-2022</p>
+													<p class="img-name">Mathler KW</p>
 												</div>
 											</a>
 										</div>

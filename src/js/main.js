@@ -480,7 +480,7 @@ const portofolioPage = `<div id="portofolio" class="page" page="portofolio">
 										</div>
 										<div class="img-content">
 											<a
-												href="https://github.com/IkanPakUs/Mathler-KW/"
+												href="https://ikanpakus.github.io/Mathler-KW/"
 												class="img-warp"
 											>
 												<img

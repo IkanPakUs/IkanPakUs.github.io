@@ -464,17 +464,17 @@ const portofolioPage = `<div id="portofolio" class="page" page="portofolio">
 										</div>
 										<div class="img-content">
 											<a
-												href="https://ikanpakus.github.io/bersama-waspada/"
+												href="https://github.com/IkanPakUs/Ecommerce_2"
 												class="img-warp"
 											>
 												<img
-													src="src/img/covid-map.png"
-													alt="bersama waspada"
+													src="src/img/ecommerce-2.png"
+													alt="E-commerce"
 													class="portofolio-img"
 												/>
 												<div class="image-text">
-													<p class="date">19-09-2021</p>
-													<p class="img-name">Covid Map Page</p>
+													<p class="date">24-12-2021</p>
+													<p class="img-name">E-commerce</p>
 												</div>
 											</a>
 										</div>
@@ -484,7 +484,7 @@ const portofolioPage = `<div id="portofolio" class="page" page="portofolio">
 												class="img-warp"
 											>
 												<img
-													src="src/img/covid-map.png"
+													src="src/img/Mathler.png"
 													alt="Mathler KW"
 													class="portofolio-img"
 												/>

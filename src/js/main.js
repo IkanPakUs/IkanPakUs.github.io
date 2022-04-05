@@ -155,10 +155,12 @@ function percentBar() {
 	$(".my-skill-bar").each(function () {
 		let percent = $(this).attr("percent");
 
-		$(this).find(".skill-bar-percent").text(percent);
+		let status_skill = percent < 40 ? 'Beginner' : percent >= 80 ? "Advanced" : "Intermediate";
+
+		$(this).find(".skill-bar-percent").text(status_skill);
 
 		$(this).find(".skill-bar").css({
-			width: percent,
+			width: percent + "%",
 		});
 	});
 }
@@ -378,42 +380,42 @@ const skillPage = `<div id="skill" class="page" page="skill">
 									</div>
 								</div>
 								<div class="col-4 skill-content">
-									<div class="my-skill-bar" percent="80%">
+									<div class="my-skill-bar" percent="90">
 										<div class="skill-bar-name"><p>HTML</p></div>
 										<div class="skill-bar"></div>
 										<div class="skill-bar-percent"></div>
 									</div>
-									<div class="my-skill-bar" percent="80%">
+									<div class="my-skill-bar" percent="90">
 										<div class="skill-bar-name"><p>CSS</p></div>
 										<div class="skill-bar"></div>
 										<div class="skill-bar-percent"></div>
 									</div>
-									<div class="my-skill-bar" percent="70%">
+									<div class="my-skill-bar" percent="80">
 										<div class="skill-bar-name"><p>JAVASCRIPT</p></div>
 										<div class="skill-bar"></div>
 										<div class="skill-bar-percent"></div>
 									</div>
-									<div class="my-skill-bar" percent="75%">
+									<div class="my-skill-bar" percent="80">
 										<div class="skill-bar-name"><p>PHP</p></div>
 										<div class="skill-bar"></div>
 										<div class="skill-bar-percent"></div>
 									</div>
-									<div class="my-skill-bar" percent="70%">
+									<div class="my-skill-bar" percent="75">
 										<div class="skill-bar-name"><p>BOOTSTRAP</p></div>
 										<div class="skill-bar"></div>
 										<div class="skill-bar-percent"></div>
 									</div>
-									<div class="my-skill-bar" percent="75%">
+									<div class="my-skill-bar" percent="75">
 										<div class="skill-bar-name"><p>JQUERY</p></div>
 										<div class="skill-bar"></div>
 										<div class="skill-bar-percent"></div>
 									</div>
-									<div class="my-skill-bar" percent="80%">
+									<div class="my-skill-bar" percent="80">
 										<div class="skill-bar-name"><p>LARAVEL</p></div>
 										<div class="skill-bar"></div>
 										<div class="skill-bar-percent"></div>
 									</div>
-									<div class="my-skill-bar" percent="50%">
+									<div class="my-skill-bar" percent="50">
 										<div class="skill-bar-name"><p>VUE JS</p></div>
 										<div class="skill-bar"></div>
 										<div class="skill-bar-percent"></div>

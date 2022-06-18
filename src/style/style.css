@@ -368,7 +368,7 @@ body {
 #about .desc {
 	padding-left: 30px;
 	color: var(--secondary-color);
-	max-width: 400px;
+	max-width: 600px;
 	text-align: left;
 	transform: translateY(0px);
 	transition: 0.8s ease-in-out;

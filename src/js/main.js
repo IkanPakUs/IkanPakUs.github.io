@@ -155,7 +155,7 @@ function percentBar() {
 	$(".my-skill-bar").each(function () {
 		let percent = $(this).attr("percent");
 
-		let status_skill = percent < 40 ? 'Beginner' : percent >= 80 ? "Advanced" : "Intermediate";
+		let status_skill = percent <= 40 ? 'Beginner' : percent > 70 ? percent > 85 ? "Expert" : "Advanced" : "Intermediate";
 
 		$(this).find(".skill-bar-percent").text(status_skill);
 
@@ -260,8 +260,10 @@ function copyright() {
 function year() {
 	let year = new Date().getFullYear();
 	let age = year - 2003;
+	let experience = year - 2020;
 
 	$("span.age").html(age);
+	$("span.exp").html(experience);
 }
 
 // ------ CAUTION FOR YOUR EYES ------ //
@@ -339,11 +341,10 @@ const aboutPage = `<div id="about" class="page" page="about">
 						</div>
 						<div class="desc">
 							<p>
-								Hello everyone, im Komang Arya (<span class="age"></span> years old) <br />im a web developer based on
-								Indonesia, Bali. I like programming since im in senior high school,
-								cause i think its fun to solve the problem. Now im student in STIKOM
-								Bali<br />
-								(Institute of Technology)
+								Hello, my name Komang Arya (<span class="age"></span> years old), i'm a full stack developer who familiar using php with laravel framework. and want to work with full stack javascript. i've been learning programing since <span class="exp"></span> years ago. 
+								I'm based in Bali, Indonesia, and a college student in ITB Stikom Bali since 2020.
+								Programing is one of my hobbies because i think it's fun to find the solution in a problem.
+								I'm open for the recruiter to give me a freelance project, and also i'm looking for a remote job.
 							</p>
 						</div>
 					</div>`;
@@ -400,12 +401,12 @@ const skillPage = `<div id="skill" class="page" page="skill">
 										<div class="skill-bar"></div>
 										<div class="skill-bar-percent"></div>
 									</div>
-									<div class="my-skill-bar" percent="75">
+									<div class="my-skill-bar" percent="70">
 										<div class="skill-bar-name"><p>BOOTSTRAP</p></div>
 										<div class="skill-bar"></div>
 										<div class="skill-bar-percent"></div>
 									</div>
-									<div class="my-skill-bar" percent="75">
+									<div class="my-skill-bar" percent="70">
 										<div class="skill-bar-name"><p>JQUERY</p></div>
 										<div class="skill-bar"></div>
 										<div class="skill-bar-percent"></div>
@@ -415,7 +416,7 @@ const skillPage = `<div id="skill" class="page" page="skill">
 										<div class="skill-bar"></div>
 										<div class="skill-bar-percent"></div>
 									</div>
-									<div class="my-skill-bar" percent="50">
+									<div class="my-skill-bar" percent="60">
 										<div class="skill-bar-name"><p>VUE JS</p></div>
 										<div class="skill-bar"></div>
 										<div class="skill-bar-percent"></div>

@@ -260,7 +260,7 @@ function copyright() {
 function year() {
 	let year = new Date().getFullYear();
 	let age = year - 2003;
-	let experience = year - 2020;
+	let experience = year - 2019;
 
 	$("span.age").html(age);
 	$("span.exp").html(experience);
@@ -358,16 +358,23 @@ const skillPage = `<div id="skill" class="page" page="skill">
 										<ul>
 											<li>
 												<div class="timeline-name">
-													<h4>Pt.Omni Hotelier Internasional</h4>
+													<h4>Pt. Omni Hotelier Internasional</h4>
+													<p>Lead - intermediate fullstack developer</p>
+													<small>2023 - Present</small>
+												</div>
+											</li>
+											<li>
+												<div class="timeline-name">
+													<h4>Pt. Omni Hotelier Internasional</h4>
 													<p>Junior fullstack developer</p>
-													<small>2021 - Now</small>
+													<small>2021 - 2023</small>
 												</div>
 											</li>
 											<li>
 												<div class="timeline-name">
 													<h4>ITB Stikom Bali</h4>
 													<p>majoring in information systems</p>
-													<small>2020 - Now</small>
+													<small>2020 - Present</small>
 												</div>
 											</li>
 											<li>
@@ -396,12 +403,17 @@ const skillPage = `<div id="skill" class="page" page="skill">
 										<div class="skill-bar"></div>
 										<div class="skill-bar-percent"></div>
 									</div>
+									<div class="my-skill-bar" percent="40">
+										<div class="skill-bar-name"><p>TYPESCRIPT</p></div>
+										<div class="skill-bar"></div>
+										<div class="skill-bar-percent"></div>
+									</div>
 									<div class="my-skill-bar" percent="80">
 										<div class="skill-bar-name"><p>PHP</p></div>
 										<div class="skill-bar"></div>
 										<div class="skill-bar-percent"></div>
 									</div>
-									<div class="my-skill-bar" percent="70">
+									<div class="my-skill-bar" percent="80">
 										<div class="skill-bar-name"><p>BOOTSTRAP</p></div>
 										<div class="skill-bar"></div>
 										<div class="skill-bar-percent"></div>
@@ -416,7 +428,7 @@ const skillPage = `<div id="skill" class="page" page="skill">
 										<div class="skill-bar"></div>
 										<div class="skill-bar-percent"></div>
 									</div>
-									<div class="my-skill-bar" percent="60">
+									<div class="my-skill-bar" percent="80">
 										<div class="skill-bar-name"><p>VUE JS</p></div>
 										<div class="skill-bar"></div>
 										<div class="skill-bar-percent"></div>
@@ -467,11 +479,11 @@ const portofolioPage = `<div id="portofolio" class="page" page="portofolio">
 										</div>
 										<div class="img-content">
 											<a
-												href="https://github.com/IkanPakUs/Ecommerce_2"
+												href="https://github.com/IkanPakUs/Ecommerce-PHP-native-Exam-Project-for-Semester-4"
 												class="img-warp"
 											>
 												<img
-													src="src/img/ecommerce-2.png"
+													src="src/img/ecommerce.png"
 													alt="E-commerce"
 													class="portofolio-img"
 												/>

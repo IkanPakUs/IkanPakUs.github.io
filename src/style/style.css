@@ -23,6 +23,19 @@ body {
 	width: 100%;
 }
 
+.menu {
+	position: relative;
+	min-height: 100vh;
+}
+
+/* the newest page sits in flow (sizes .menu to its content); the outgoing
+   page overlaps it while the transition runs */
+.menu > .page:not(:last-child) {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
 /* PRELOADER */
 .pace {
 	pointer-events: none;
@@ -185,10 +198,10 @@ body {
 
 /* .CONTENT */
 #home {
-	position: absolute;
+	position: relative;
 	top: 0px;
 	background-color: var(--primary-color);
-	height: 100vh;
+	min-height: 100vh;
 	width: 100%;
 	transition: 0.4s ease-in-out;
 }
@@ -196,7 +209,7 @@ body {
 .mainpage {
 	display: flex;
 	position: relative;
-	height: 100vh;
+	min-height: 100vh;
 }
 
 .content {
@@ -255,10 +268,11 @@ body {
 	align-items: center;
 }
 
-#text-mainpage  .center-content h1 {
+#text-mainpage .center-content h1 {
 	font-weight: bold;
 	font-size: 6.6vw;
-	position: relative;;
+	position: relative;
+	;
 	color: var(--secondary-color);
 	margin-bottom: 0px;
 	line-height: 45px;
@@ -311,9 +325,9 @@ body {
 
 /* ABOUT ME PAGE */
 #about {
-	position: absolute;
+	position: relative;
 	top: 0px;
-	height: 100vh;
+	min-height: 100vh;
 	width: 100%;
 	background-color: var(--primary-color);
 	display: flex;
@@ -376,10 +390,10 @@ body {
 
 /* SKILL PAGE */
 #skill {
-	position: absolute;
+	position: relative;
 	top: 0px;
 	background-color: var(--primary-color);
-	height: 100vh;
+	min-height: 100vh;
 	width: 100%;
 	transition: 0.4s ease-in-out;
 	display: flex;
@@ -392,22 +406,42 @@ body {
 	padding: 0px 20%;
 }
 
+#skill .skill-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 60px;
+}
+
 /* .JOURNEY */
+#skill .skill-content {
+	flex: 1 1 0;
+	min-width: 0;
+}
+
+#skill .skill-content:first-child {
+	flex: 1.6 1 0;
+}
+
+#skill .timeline {
+	position: relative;
+	margin-left: 0 !important;
+}
+
 #skill .timeline::before {
 	content: "";
 	position: absolute;
 	top: 45px;
+	left: 2px;
 	width: 2px;
-	height: 100%;
+	height: calc(100% - 45px);
 	background-color: var(--shadow-color);
 	transition: 0.6s ease-in-out;
 }
 
 #skill .timeline h2 {
-	position: absolute;
 	color: var(--secondary-color);
-	top: 0px;
-	left: 48px;
+	margin-left: 20px;
 }
 
 #skill .timeline p,
@@ -418,7 +452,7 @@ body {
 
 #skill .timeline ul {
 	position: relative;
-	top: 35px;
+	margin-top: 35px;
 }
 
 #skill .timeline ul li {
@@ -458,8 +492,7 @@ body {
 
 /* .SKILL BAR */
 #skill .skill-content:last-of-type {
-	position: relative;
-	top: 20px;
+	margin-top: 20px;
 }
 
 #skill .skill-bar-name p {
@@ -496,11 +529,11 @@ body {
 /* PORTOFOLIO PAGE */
 #portofolio {
 	background-color: var(--primary-color);
-	height: 100vh;
+	min-height: 100vh;
 	width: 100%;
 	top: 0px;
 	left: 0px;
-	position: absolute;
+	position: relative;
 	transition: 0.4s ease-in-out;
 	display: flex;
 	align-items: center;
@@ -597,10 +630,10 @@ body {
 
 /* FOOTER PAGE */
 #footer {
-	position: absolute;
+	position: relative;
 	top: 0px;
 	background-color: var(--primary-color);
-	height: 100vh;
+	min-height: 100vh;
 	width: 100%;
 	transition: 0.4s ease-in-out;
 }
@@ -701,6 +734,7 @@ body {
 }
 
 @media (max-width: 990px) {
+
 	/* ABOUT PAGE */
 	#about .desc {
 		position: relative;
@@ -743,6 +777,7 @@ body {
 }
 
 @media (max-width: 768px) {
+
 	/* PRELOAD */
 	.pace {
 		max-width: 300px;
@@ -790,41 +825,29 @@ body {
 
 	/* SKILL */
 	#skill {
-		height: 100vh;
+		height: auto;
+		min-height: 100vh;
+		position: relative;
+		align-items: flex-start;
+		/* clear the menu button overlay */
+		transform: translateY(70px);
+		padding-bottom: 70px;
+		box-sizing: content-box;
 	}
 
 	#skill .my-skill {
-		top: 80px;
-		padding: 0px;
+		padding: 30px 28px 40px;
 	}
 
-	#skill .timeline h5 {
-		top: -50px;
+	#skill .skill-row {
+		flex-direction: column;
+		gap: 50px;
 	}
 
-	#skill .timeline ul {
-		top: 85px;
-	}
-
-	#skill .skill-content:last-of-type {
-		top: 95px;
-	}
-
-	#skill .skill-content.col-4 {
-		height: 325px;
-	}
-
-	.my-skill .row {
-		display: unset;
-	}
-
-	.skill-content.col-8 {
-		max-width: unset;
-	}
-
-	.skill-content.col-4 {
-		max-width: unset;
-		margin-top: 100px;
+	#skill .skill-content,
+	#skill .skill-content:first-child {
+		flex: none;
+		width: 100%;
 	}
 }
 

@@ -22,7 +22,7 @@ $(document).ready(function () {
 });
 
 /*************************************
-             == FUNCTION ==
+			 == FUNCTION ==
 *************************************/
 
 // ------ PRELOAD PAGE FUNC ------ //
@@ -252,7 +252,7 @@ function display(page) {
 
 function copyright() {
 	let year = new Date();
-	$(".copyright").html(`&#169 Copyright IkanPakUs - ${year.getFullYear()}`);
+	$(".copyright").html(`&copy; Copyright IkanPakUs - ${year.getFullYear()}`);
 }
 
 // ------ YEARS ------ //
@@ -276,7 +276,7 @@ const homePage = `<div id="home" class="page" page="home">
 								<div class="text-box">
 									<div class="top-content">
 										<div class="greeting">
-											<h3>hi im</h3>
+											<h3>hi, I'm</h3>
 										</div>
 										<div class="line"></div>
 									</div>
@@ -341,31 +341,38 @@ const aboutPage = `<div id="about" class="page" page="about">
 						</div>
 						<div class="desc">
 							<p>
-								Hello, my name Komang Arya (<span class="age"></span> years old), i'm a full stack developer who familiar using php with laravel framework. and want to work with full stack javascript. i've been learning programing since <span class="exp"></span> years ago. 
-								I'm based in Bali, Indonesia, and a college student in ITB Stikom Bali since 2020.
-								Programing is one of my hobbies because i think it's fun to find the solution in a problem.
-								I'm open for the recruiter to give me a freelance project, and also i'm looking for a remote job.
+								Hello, my name is Komang Arya (<span class="age"></span> years old). I'm a full stack developer who is familiar with PHP and the Laravel framework, and I want to work with full stack JavaScript. I've been learning programming for <span class="exp"></span> years.
+								I'm based in Bali, Indonesia, and I've been a student at ITB Stikom Bali since 2020.
+								Programming is one of my hobbies because I think it's fun to find solutions to problems.
+								I'm open to freelance projects from recruiters, and I'm also looking for a remote job.
 							</p>
 						</div>
 					</div>`;
 
 const skillPage = `<div id="skill" class="page" page="skill">
 						<div class="my-skill">
-							<div class="row justify-content-end">
-								<div class="col-8 skill-content">
+							<div class="skill-row">
+								<div class="skill-content">
 									<div class="timeline ml-5">
 										<h2>MY JOURNEY</h2>
 										<ul>
 											<li>
 												<div class="timeline-name">
-													<h4>Pt. Omni Hotelier Internasional</h4>
-													<p>Lead - intermediate fullstack developer</p>
-													<small>2023 - Present</small>
+													<h4>Beyondsoft Consulting Inc</h4>
+													<p>Fullstack developer</p>
+													<small>2024 - Present</small>
 												</div>
 											</li>
 											<li>
 												<div class="timeline-name">
-													<h4>Pt. Omni Hotelier Internasional</h4>
+													<h4>PT Omni Hotelier Internasional</h4>
+													<p>Lead - intermediate fullstack developer</p>
+													<small>2023 - 2024</small>
+												</div>
+											</li>
+											<li>
+												<div class="timeline-name">
+													<h4>PT Omni Hotelier Internasional</h4>
 													<p>Junior fullstack developer</p>
 													<small>2021 - 2023</small>
 												</div>
@@ -373,63 +380,43 @@ const skillPage = `<div id="skill" class="page" page="skill">
 											<li>
 												<div class="timeline-name">
 													<h4>ITB Stikom Bali</h4>
-													<p>majoring in information systems</p>
-													<small>2020 - Present</small>
+													<p>Majoring in information systems</p>
+													<small>2020 - 2024</small>
 												</div>
 											</li>
 											<li>
 												<div class="timeline-name">
 													<h4>SMKN 1 Denpasar</h4>
-													<p>majoring in computer and networking</p>
+													<p>Majoring in computer and networking</p>
 													<small>2017 - 2020</small>
 												</div>
 											</li>
 										</ul>
 									</div>
 								</div>
-								<div class="col-4 skill-content">
+								<div class="skill-content">
 									<div class="my-skill-bar" percent="90">
-										<div class="skill-bar-name"><p>HTML</p></div>
+										<div class="skill-bar-name"><p>HTML & CSS</p></div>
 										<div class="skill-bar"></div>
 										<div class="skill-bar-percent"></div>
 									</div>
 									<div class="my-skill-bar" percent="90">
-										<div class="skill-bar-name"><p>CSS</p></div>
-										<div class="skill-bar"></div>
-										<div class="skill-bar-percent"></div>
-									</div>
-									<div class="my-skill-bar" percent="80">
 										<div class="skill-bar-name"><p>JAVASCRIPT</p></div>
 										<div class="skill-bar"></div>
 										<div class="skill-bar-percent"></div>
 									</div>
-									<div class="my-skill-bar" percent="40">
-										<div class="skill-bar-name"><p>TYPESCRIPT</p></div>
-										<div class="skill-bar"></div>
-										<div class="skill-bar-percent"></div>
-									</div>
-									<div class="my-skill-bar" percent="80">
+									<div class="my-skill-bar" percent="90">
 										<div class="skill-bar-name"><p>PHP</p></div>
 										<div class="skill-bar"></div>
 										<div class="skill-bar-percent"></div>
 									</div>
-									<div class="my-skill-bar" percent="80">
-										<div class="skill-bar-name"><p>BOOTSTRAP</p></div>
-										<div class="skill-bar"></div>
-										<div class="skill-bar-percent"></div>
-									</div>
-									<div class="my-skill-bar" percent="70">
-										<div class="skill-bar-name"><p>JQUERY</p></div>
-										<div class="skill-bar"></div>
-										<div class="skill-bar-percent"></div>
-									</div>
-									<div class="my-skill-bar" percent="80">
+									<div class="my-skill-bar" percent="90">
 										<div class="skill-bar-name"><p>LARAVEL</p></div>
 										<div class="skill-bar"></div>
 										<div class="skill-bar-percent"></div>
 									</div>
-									<div class="my-skill-bar" percent="80">
-										<div class="skill-bar-name"><p>VUE JS</p></div>
+									<div class="my-skill-bar" percent="90">
+										<div class="skill-bar-name"><p>VUE.JS</p></div>
 										<div class="skill-bar"></div>
 										<div class="skill-bar-percent"></div>
 									</div>
@@ -441,7 +428,7 @@ const skillPage = `<div id="skill" class="page" page="skill">
 const portofolioPage = `<div id="portofolio" class="page" page="portofolio">
 							<div id="portofolio-content">
 								<div id="text-content">
-									<h1>WHAT <span>I'VE</span><br />BEEN <span>MAKE</span></h1>
+									<h1>WHAT <span>I'VE BUILT</span></h1>
 								</div>
 								<div id="img-content">
 									<div id="content-warp">
@@ -468,12 +455,12 @@ const portofolioPage = `<div id="portofolio" class="page" page="portofolio">
 											>
 												<img
 													src="src/img/portofolio.JPG"
-													alt="portofolio page"
+													alt="Portfolio page"
 													class="portofolio-img"
 												/>
 												<div class="image-text">
 													<p class="date">11-04-2021</p>
-													<p class="img-name">Portofolio Page</p>
+													<p class="img-name">Portfolio Page</p>
 												</div>
 											</a>
 										</div>
@@ -519,8 +506,8 @@ const footerPage = `<div id="footer" class="d-flex align-items-center justify-co
 							<h3>mang arya</h3>
 							<div class="footer-info">
 								<ul>
-									<li>Mail : km.aryawirawan@gmail.com</li>
-									<li>Phone : +62 896 5672 0690</li>
+									<li>Mail: km.aryawirawan@gmail.com</li>
+									<li>Phone: +62 896 5672 0690</li>
 								</ul>
 							</div>
 							<div class="information">

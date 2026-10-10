@@ -1,0 +1,24 @@
+index.html
+  s_a43579cd2259ce::t_828e439aa2dda4 49-50
+src/style/style.css
+  s_a43579cd2259ce::t_6743e5bb5210ce 27,29-36,201,204,212,328,330,393,396,455,495,532,536,633,636
+  s_a43579cd2259ce::t_4ae63c509f1252 26,28,37-38,271,274-275,409-415,417-430,435,437,444,737,780,828-835,839,842-844,847-850
+src/js/main.js
+  s_a43579cd2259ce::t_828e439aa2dda4 255,279,344-347,354-355,361-368,370,375,383-384,390,397,399,408,413,418-419,431,458,463,509-510
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.13",
+  "base_commit_sha": "d1bd821f81419db0f9a9d69eaf95e50de4768005",
+  "prompts": {},
+  "sessions": {
+    "s_a43579cd2259ce": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "e8137c07-8e8f-4922-81fc-70c058faf8cb",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "IkanPakUs <komanggede86@gmail.com>"
+    }
+  }
+}
